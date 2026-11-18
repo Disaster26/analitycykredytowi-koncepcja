@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Pośrednictwo kredytowe dla firm i osób prywatnych | Analitycy Kredytowi (podgląd)</title>
+<meta name="description" content="Kredyty, pożyczki, leasing i faktoring dla firm i klientów indywidualnych. Finansowanie z banków, funduszy inwestycyjnych i od inwestorów prywatnych. Analitycy Kredytowi, Sztum - działamy w całej Polsce.">
+<meta name="theme-color" content="#1C4583">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/archivo-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" type="image/webp" href="img/hero-m-760.webp" media="(max-width: 819px)" imagesrcset="img/hero-m-480.webp 480w, img/hero-m-760.webp 760w, img/hero-m-1000.webp 1000w" imagesizes="100vw">
+<link rel="preload" as="image" type="image/webp" href="img/hero-1600.webp" media="(min-width: 820px)" imagesrcset="img/hero-1024.webp 1024w, img/hero-1600.webp 1600w, img/hero-1920.webp 1920w" imagesizes="100vw">
+<style>
+@font-face{font-family:"Archivo";font-style:normal;font-weight:400 800;font-display:swap;src:url(fonts/archivo-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00D7,U+00F3,U+2013,U+2018-2019,U+201C-201E,U+2026}
+@font-face{font-family:"Archivo";font-style:normal;font-weight:400 800;font-display:swap;src:url(fonts/archivo-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+:root{
+  --navy:#1C4583;      /* kolor logo */
+  --navy-d:#0F2C5C;    /* ciemna sekcja */
+  --blue:#2B6BE0;      /* jasniejsza odmiana granatu z logo - linie, wyroznienia */
+  --ink:#121C2E;
+  --text:#2C3646;
+  --mute:#5A6577;
+  --gray:#EEF1F5;
+  --line:#D5DBE4;
+  --k:.41;             /* nachylenie kreski litery A z logo (ok. 22 st.) */
+  --cw:min(92vw,1720px);
+  --pad:clamp(16px,4vw,64px);
+  --hdr:76px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:#fff;color:var(--text);font:400 17px/1.6 "Archivo",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{color:var(--ink);font-weight:700;line-height:1.12;letter-spacing:-.015em;margin:0}
+h2{font-size:clamp(1.9rem,1.2rem + 2.2vw,3.1rem)}
+h3{font-size:1.18rem;line-height:1.25}
+p{margin:0 0 1em}
+.wrap{width:var(--cw);margin-inline:auto}
+section{scroll-margin-top:var(--hdr)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+/* przycisk: prawa krawedz scieta pod katem kreski A */
+.btn{--c:16px;display:inline-flex;align-items:center;gap:.6em;min-height:54px;padding:0 calc(28px + var(--c)) 0 28px;font:700 1.02rem/1 inherit;font-family:inherit;text-decoration:none;border:0;cursor:pointer;clip-path:polygon(0 0,100% 0,calc(100% - var(--c)) 100%,0 100%);transition:background-color .2s,color .2s,transform .2s}
+.btn-white{background:#fff;color:var(--navy)}
+.btn-white:hover{background:#E4ECFA}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{background:var(--navy-d)}
+.btn:active{transform:translateY(1px)}
+.btn .ar{display:inline-block;width:18px;height:2px;background:currentColor;position:relative;transform:skewX(-22deg)}
+.btn .ar::after{content:"";position:absolute;right:-1px;top:-4px;width:9px;height:9px;border:2px solid currentColor;border-width:2px 2px 0 0;transform:skewX(22deg) rotate(45deg)}
+
+/* ---------- naglowek ---------- */
+.hdr{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid transparent;transition:border-color .2s,box-shadow .2s}
+.hdr.sc{border-color:var(--line);box-shadow:0 6px 24px rgba(15,44,92,.06)}
+.hdr .wrap{height:var(--hdr);display:flex;align-items:center;gap:28px}
+.logo{display:block;color:var(--navy);flex:none}
+.logo-svg{display:block;height:60px;width:auto}
+.nav{display:flex;gap:clamp(18px,2vw,36px);margin-left:auto}
+.nav a{font-weight:600;font-size:1rem;text-decoration:none;color:var(--ink);padding:8px 0;position:relative}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:3px;background:var(--navy);transform:scaleX(0) skewX(-22deg);transform-origin:left;transition:transform .25s}
+.nav a:hover::after,.nav a.on::after{transform:scaleX(1) skewX(-22deg)}
+.hdr-tel{display:flex;flex-direction:column;align-items:flex-end;text-decoration:none;line-height:1.15;padding-left:28px;border-left:1px solid var(--line)}
+.hdr-tel small{font-size:.78rem;color:var(--mute)}
+.hdr-tel b{font-size:1.15rem;color:var(--navy);letter-spacing:.01em}
+.burger{display:none}
+
+/* ---------- pierwszy ekran ---------- */
+.hero{position:relative;--hh:clamp(600px,calc(100svh - var(--hdr)),940px);height:var(--hh);overflow:hidden;background:var(--gray)}
+.hero picture,.hero picture img{position:absolute;inset:0;width:100%;height:100%}
+.hero picture img{object-fit:cover;object-position:60% 30%}
+.hero-box{position:absolute;left:0;bottom:0;width:calc((100vw - var(--cw))/2 + min(56vw,960px));background:var(--navy);color:#fff;
+  --s:calc(var(--bh,470px) * var(--k));
+  clip-path:polygon(0 0,100% 0,calc(100% - var(--s)) 100%,0 100%);
+  padding:clamp(40px,5vh,64px) calc(var(--s) + 48px) clamp(40px,6vh,72px) calc((100vw - var(--cw))/2)}
+.hero-box h1{color:#fff;font-size:clamp(2.15rem,1.2rem + 2.3vw,3.65rem);font-weight:700;max-width:16.5em;line-height:1.08}
+.hero-box h1 span{display:block;font-weight:500;font-size:.6em;line-height:1.25;margin-top:.55em;color:#C9D8F4;letter-spacing:0}
+.hero-box p{font-size:clamp(1.02rem,.95rem + .3vw,1.2rem);max-width:33em;color:#E3EAF7;margin:22px 0 30px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:6px 22px;margin-top:26px;font-size:.95rem;color:#C9D8F4}
+.hero-meta a{color:#fff;font-weight:600;text-decoration:none}
+
+/* ---------- sekcje ---------- */
+.sec{padding:clamp(64px,8vw,120px) 0}
+.sec-head{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:24px clamp(32px,5vw,96px);align-items:end;margin-bottom:clamp(32px,4vw,56px)}
+.sec-head p{margin:0;color:var(--mute);font-size:1.08rem;max-width:38em}
+.gray{background:var(--gray)}
+
+/* oferta */
+.tiles{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:clamp(10px,1.1vw,18px);list-style:none;margin:0;padding:0}
+.tile a{display:block;position:relative;text-decoration:none;overflow:hidden;background:var(--navy);aspect-ratio:1/1.08}
+.tile img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease,opacity .3s}
+.tile a:hover img{transform:scale(1.05)}
+.tile .lab{position:absolute;left:0;bottom:0;max-width:calc(100% - 10px);background:var(--navy);color:#fff;font-weight:600;font-size:clamp(.92rem,.8rem + .3vw,1.06rem);line-height:1.22;padding:12px 30px 12px 16px;clip-path:polygon(0 0,100% 0,calc(100% - 14px) 100%,0 100%);transition:background-color .2s}
+.tile a:hover .lab{background:var(--blue)}
+.tile-cta a{background:var(--navy-d);color:#fff;display:flex;flex-direction:column;justify-content:space-between;padding:clamp(16px,1.6vw,26px)}
+.tile-cta b{font-size:clamp(1.05rem,.9rem + .45vw,1.35rem);line-height:1.22;font-weight:700}
+.tile-cta span{font-size:.95rem;color:#C9D8F4}
+.tile-cta i{font-style:normal;font-weight:700;display:inline-flex;align-items:center;gap:10px}
+.tile-cta a::before{content:"";position:absolute;right:-30px;top:0;bottom:0;width:60px;background:var(--navy);transform:skewX(-22deg);transition:right .3s}
+.tile-cta a:hover::before{right:-14px}
+.src-note{margin:clamp(28px,3vw,40px) 0 0;color:var(--mute);font-size:1rem}
+.src-note b{color:var(--ink)}
+
+/* trudne sytuacje */
+.hard{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:stretch;background:var(--gray)}
+.hard-img{position:relative;min-height:460px}
+.hard-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:40% 40%;clip-path:polygon(0 0,100% 0,calc(100% - 140px) 100%,0 100%)}
+.hard-txt{padding:clamp(56px,7vw,110px) calc((100vw - var(--cw))/2) clamp(56px,7vw,110px) clamp(24px,3vw,48px);max-width:calc(var(--cw)/2 + (100vw - var(--cw))/2)}
+.hard-txt h2{margin-bottom:18px}
+.hard-txt .q{font-size:1.2rem;font-weight:600;color:var(--navy);margin-bottom:14px}
+.ticks{list-style:none;margin:26px 0 0;padding:0;display:grid;gap:14px}
+.ticks li{position:relative;padding-left:30px}
+.ticks li::before{content:"";position:absolute;left:4px;top:.32em;width:9px;height:18px;background:var(--navy);transform:skewX(-22deg)}
+.fine{font-size:.9rem;color:var(--mute);margin:22px 0 0}
+
+/* realizacje - ciemna sekcja */
+.dark{background:var(--navy-d);color:#DCE5F4;position:relative}
+.dark h2,.dark h3{color:#fff}
+.dark .sec-head p{color:#B9C8E4}
+.real-top{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(32px,5vw,96px);align-items:center;margin-bottom:clamp(36px,4vw,60px)}
+.real-top h2{margin-bottom:18px}
+.real-top p{color:#B9C8E4;font-size:1.08rem;max-width:34em}
+.real-top p b{color:#fff}
+.map{position:relative;width:100%;max-width:640px;justify-self:end;aspect-ratio:612.757/577.232}
+.map svg{position:absolute;inset:0;width:100%;height:100%}
+.map path{fill:#173D78;stroke:#3B66AE;stroke-width:1.2}
+.pin{position:absolute;width:14px;height:22px;margin:-22px 0 0 -7px;background:#fff;border:0;padding:0;cursor:pointer;transform:skewX(-22deg);transition:background-color .2s,transform .2s}
+.pin:hover,.pin.on{background:#6FA0FF;transform:skewX(-22deg) scale(1.35)}
+.pin span{position:absolute;left:50%;bottom:calc(100% + 8px);transform:translateX(-50%) skewX(22deg);white-space:nowrap;background:#fff;color:var(--navy-d);font-weight:700;font-size:.85rem;padding:3px 8px;opacity:0;pointer-events:none;transition:opacity .15s}
+.pin:hover span,.pin.on span{opacity:1}
+.strip-wrap{position:relative;width:min(100vw - 2*clamp(16px,3vw,56px),1840px);margin-inline:auto}
+.strip{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 3*18px)/4);gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:4px 0 8px;cursor:grab;overscroll-behavior-x:contain}
+.strip::-webkit-scrollbar{display:none}
+.strip.drag{cursor:grabbing;scroll-snap-type:none}
+.case{scroll-snap-align:start;background:#163A72;padding:26px 26px 24px;display:flex;flex-direction:column;min-height:236px;position:relative;transition:background-color .2s;user-select:none}
+.case::before{content:"";position:absolute;left:26px;top:0;width:44px;height:5px;background:#6FA0FF;transform:skewX(-22deg)}
+.case.on{background:#1E4C93}
+.case .amt{font-size:clamp(2rem,1.4rem + 1.2vw,2.6rem);font-weight:800;color:#fff;letter-spacing:-.02em;line-height:1;margin:10px 0 12px}
+.case h3{font-size:1.06rem;color:#fff;margin-bottom:6px}
+.case p{margin:0;color:#B9C8E4;font-size:.98rem;line-height:1.45}
+.case .pl{margin-top:auto;padding-top:16px;font-size:.92rem;font-weight:600;color:#8FB2F2}
+.arrows{display:flex;gap:10px;justify-content:flex-end;margin-top:20px}
+.arr{width:54px;height:46px;border:1px solid #3B66AE;background:transparent;color:#fff;cursor:pointer;clip-path:polygon(0 0,100% 0,calc(100% - 10px) 100%,0 100%);font:700 1.2rem/1 inherit;font-family:inherit;transition:background-color .2s,opacity .2s}
+.arr:hover{background:#1E4C93}
+.arr:disabled{opacity:.3;cursor:default;background:transparent}
+.dark-edge{position:absolute;left:0;right:0;top:-1px;height:clamp(28px,3.4vw,60px);background:var(--gray);clip-path:polygon(0 0,100% 0,0 100%)}
+
+/* jak dzialamy */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(18px,2.4vw,40px);counter-reset:s}
+.step{counter-increment:s;position:relative}
+.step img{width:100%;aspect-ratio:343/150;object-fit:cover;clip-path:polygon(0 0,100% 0,calc(100% - 26px) 100%,0 100%)}
+.step-n{display:flex;align-items:center;gap:14px;margin:22px 0 12px;font-weight:800;color:var(--navy);font-size:1.05rem}
+.step-n::before{content:counter(s);display:grid;place-items:center;width:38px;height:38px;background:var(--navy);color:#fff;clip-path:polygon(9px 0,100% 0,calc(100% - 9px) 100%,0 100%)}
+.step-n::after{content:"";flex:1;height:2px;background:linear-gradient(90deg,var(--line),transparent)}
+.step p{margin:0;font-size:1.02rem}
+
+/* opinie */
+.ops{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;list-style:none;margin:0;padding:0}
+.op{background:#fff;padding:30px 28px 26px;display:flex;flex-direction:column;position:relative}
+.op::before{content:"";position:absolute;left:28px;top:0;width:44px;height:5px;background:var(--navy);transform:skewX(-22deg)}
+.op blockquote{margin:6px 0 22px;font-size:1.04rem;color:var(--ink);line-height:1.55}
+.op cite{margin-top:auto;font-style:normal;font-weight:700;color:var(--navy)}
+.op cite small{display:block;font-weight:400;color:var(--mute);font-size:.88rem}
+
+/* o nas */
+.about{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:clamp(32px,5vw,96px);align-items:start}
+.about-lead p{font-size:1.1rem}
+.feats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:34px clamp(24px,3vw,48px)}
+.feat{border-top:2px solid var(--navy);padding-top:18px}
+.feat h3{margin-bottom:8px}
+.feat p{margin:0;color:var(--mute);font-size:1rem}
+
+/* kontakt */
+.contact{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(32px,5vw,96px);align-items:start}
+.c-list{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:22px}
+.c-list small{display:block;color:var(--mute);font-size:.88rem;margin-bottom:2px}
+.c-list a,.c-list span{font-size:1.3rem;font-weight:700;color:var(--navy);text-decoration:none;overflow-wrap:anywhere}
+.mapbox{margin-top:30px;position:relative;aspect-ratio:16/9;background:var(--gray);overflow:hidden}
+.mapbox button{position:absolute;inset:0;width:100%;border:1px solid var(--line);background:#fff;cursor:pointer;font:600 1rem/1.4 inherit;font-family:inherit;color:var(--navy);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px}
+.mapbox button::before{content:"";width:16px;height:26px;background:var(--navy);transform:skewX(-22deg)}
+.mapbox iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.form{background:#fff;padding:clamp(24px,3vw,48px);display:grid;grid-template-columns:1fr 1fr;gap:16px;border-top:5px solid var(--navy)}
+.form h3{grid-column:1/-1;font-size:1.4rem;margin-bottom:4px}
+.f{display:flex;flex-direction:column;gap:6px}
+.f.full{grid-column:1/-1}
+.f label{font-size:.92rem;font-weight:600;color:var(--ink)}
+.f input,.f select,.f textarea{font:inherit;font-size:1rem;color:var(--ink);background:#F7F9FB;border:1px solid var(--line);border-radius:0;padding:13px 14px;width:100%;min-height:50px}
+.f textarea{min-height:130px;resize:vertical}
+.f input:focus,.f select:focus,.f textarea:focus{outline:2px solid var(--blue);outline-offset:0;border-color:var(--blue);background:#fff}
+.consent{grid-column:1/-1;display:flex;gap:10px;font-size:.88rem;color:var(--mute);align-items:flex-start}
+.consent input{margin-top:4px;width:18px;height:18px;flex:none;accent-color:var(--navy)}
+.form .btn{justify-self:start}
+.form-ok{grid-column:1/-1;margin:0;font-weight:600;color:var(--navy)}
+
+/* stopka */
+.ftr{background:var(--navy-d);color:#B9C8E4;padding:clamp(48px,5vw,72px) 0 28px;font-size:.96rem}
+.ftr-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:32px clamp(24px,3vw,56px)}
+.ftr .logo{color:#fff}
+.ftr .logo-svg{height:60px}
+.ftr h4{color:#fff;font-size:1rem;margin:0 0 14px}
+.ftr ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.ftr a{color:#DCE5F4;text-decoration:none}
+.ftr a:hover{color:#fff;text-decoration:underline}
+.ftr-low{margin-top:44px;padding-top:22px;border-top:1px solid #234A86;display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between;align-items:center;font-size:.88rem}
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+
+/* pasek na telefonie */
+.mbar{display:none}
+
+/* ---------- responsywnosc ---------- */
+@media (min-width:1700px){.strip{grid-auto-columns:calc((100% - 3*18px)/4)}}
+@media (max-width:1699px){.strip{grid-auto-columns:calc((100% - 2*18px)/3)}}
+@media (max-width:1279px){
+  .tiles{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .strip{grid-auto-columns:calc((100% - 18px)/2.3)}
+  .ops{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .ftr-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:1100px){
+  .nav{display:none}
+  .hdr-tel{margin-left:auto}
+  .burger{display:grid;place-items:center;width:48px;height:48px;border:0;background:var(--navy);cursor:pointer;clip-path:polygon(0 0,100% 0,calc(100% - 8px) 100%,0 100%)}
+  .burger span,.burger span::before,.burger span::after{display:block;width:20px;height:2px;background:#fff;position:relative;transition:transform .2s,background-color .2s}
+  .burger span::before,.burger span::after{content:"";position:absolute;left:0}
+  .burger span::before{top:-6px}.burger span::after{top:6px}
+  .menu-open .burger span{background:transparent}
+  .menu-open .burger span::before{transform:translateY(6px) rotate(45deg)}
+  .menu-open .burger span::after{transform:translateY(-6px) rotate(-45deg)}
+  .nav{position:fixed;left:0;right:0;top:var(--hdr);bottom:0;background:#fff;flex-direction:column;gap:0;padding:12px var(--pad) 32px;overflow:auto;z-index:49}
+  .menu-open .nav{display:flex}
+  .nav a{font-size:1.35rem;padding:16px 0;border-bottom:1px solid var(--line)}
+  .nav a::after{display:none}
+  .nav a.on{color:var(--navy)}
+  .about,.contact{grid-template-columns:1fr}
+  .real-top{grid-template-columns:1fr}
+  .map{justify-self:start;max-width:560px}
+  .steps{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:44px}
+  .sec-head{grid-template-columns:1fr;align-items:start}
+}
+@media (max-width:819px){
+  :root{--hdr:64px}
+  .logo-svg{height:50px}
+  .hdr .wrap{gap:12px}
+  .hdr-tel{padding-left:0;border:0}
+  .hdr-tel small{display:none}
+  .hdr-tel b{font-size:1.02rem}
+  .hero{height:auto;min-height:calc(100svh - var(--hdr));display:flex;flex-direction:column}
+  .hero picture{position:relative;inset:auto;height:auto;aspect-ratio:4/3;flex:none}
+  .hero picture img{position:absolute;object-position:50% 40%}
+  .hero-box{position:relative;width:100%;flex:1;margin-top:-44px;clip-path:polygon(0 44px,100% 0,100% 100%,0 100%);padding:70px var(--pad) 36px;display:flex;flex-direction:column;justify-content:center}
+  .hero-box h1{font-size:clamp(1.85rem,1.1rem + 3.4vw,2.4rem)}
+  .hero-box p{margin:16px 0 26px}
+  .hero-meta{margin-top:22px}
+  .hard{grid-template-columns:1fr}
+  .hard-img{min-height:0;aspect-ratio:3/2}
+  .hard-img img{clip-path:polygon(0 0,100% 0,100% calc(100% - 40px),0 100%)}
+  .hard-txt{padding:36px var(--pad) 64px;max-width:none}
+  .tiles{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .strip{grid-auto-columns:82%;gap:12px}
+  .tile-cta span{display:none}
+  .pin{width:10px;height:16px;margin:-16px 0 0 -5px}
+  .strip-wrap{width:calc(100vw - 2*var(--pad))}
+  .ops{display:grid;grid-auto-flow:column;grid-template-columns:none;grid-auto-columns:86%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin:0 calc(-1*var(--pad));padding:0 var(--pad);scroll-padding-inline:var(--pad);gap:12px}
+  .ops::-webkit-scrollbar{display:none}
+  .op{scroll-snap-align:start}
+  .feats{grid-template-columns:1fr;gap:26px}
+  .form{grid-template-columns:1fr;padding:24px 20px}
+  .ftr-grid{grid-template-columns:1fr 1fr;gap:28px 20px}
+  .ftr-grid > div:first-child{grid-column:1/-1}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:40;transform:translateY(110%);transition:transform .25s;box-shadow:0 -6px 20px rgba(15,44,92,.15)}
+  .mbar.show{transform:none}
+  .mbar a{display:flex;align-items:center;justify-content:center;min-height:56px;font-weight:700;text-decoration:none;font-size:1.02rem}
+  .mbar a:first-child{background:#fff;color:var(--navy)}
+  .mbar a:last-child{background:var(--navy);color:#fff}
+  body{padding-bottom:0}
+  .ftr{padding-bottom:84px}
+}
+@media (max-width:560px){
+  .steps{grid-template-columns:1fr;row-gap:36px}
+  .wrap{width:calc(100vw - 2*var(--pad))}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header class="hdr" id="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Analitycy Kredytowi - strona główna"><svg class="logo-svg" viewBox="0 0 169.158 84.029" role="img" aria-label="Analitycy Kredytowi" fill="currentColor"><g transform="translate(-232.293 -186.079)"><g transform="translate(274.454 186.079)"><g transform="translate(0 0)"><path d="M200.562,269.37l-5.368,13.512H188.3l17.624-42.965H213.9l17.624,42.965H224.4l-5.521-13.512Zm17.01-4.337-5.131-12.369c-1.15-2.8-1.917-5.353-2.684-7.84H209.6c-.767,2.488-1.534,5.167-2.607,7.776l-5.055,12.433Z" transform="translate(-188.3 -239.917)" /></g></g><g transform="translate(57.993 94.859)"><path d="M177.13,172.762l-1.239,2.223H174.3l4.068-7.067h1.841l4.068,7.067h-1.644l-1.274-2.223Zm3.926-.713-1.184-2.035a11.866,11.866,0,0,1-.619-1.29h-.035a12,12,0,0,1-.6,1.279l-1.167,2.045Z" transform="translate(0 0.069)" /><path d="M182.255,174.984v-7.067h1.7l3.8,3.575a19.829,19.829,0,0,1,2.122,2.3l.053-.01a18.7,18.7,0,0,1-.177-2.9v-2.957h1.451v7.067H189.65l-3.786-3.587a20.925,20.925,0,0,1-2.211-2.359l-.053.01a28.6,28.6,0,0,1,.106,2.915v3.02Z" transform="translate(3.777 0.069)" /><path d="M192.369,172.762l-1.237,2.223H189.54l4.068-7.067h1.839l4.069,7.067H197.87l-1.273-2.223Zm3.927-.713-1.186-2.035a12.117,12.117,0,0,1-.618-1.29h-.035a12,12,0,0,1-.6,1.279l-1.168,2.045Z" transform="translate(7.236 0.069)" /><path d="M197.483,167.917h1.557v6.3h5.094v.765h-6.651Z" transform="translate(9.826 0.069)" /><path d="M204.7,167.917v7.067h-1.557v-7.067Z" transform="translate(12.27 0.069)" /><path d="M208.729,168.693H205.1v-.776h8.825v.776h-3.643v6.292h-1.557Z" transform="translate(13.036 0.069)" /><path d="M215.344,174.984v-3l-3.784-4.068h1.768l1.68,1.95c.442.535.814.964,1.186,1.458h.035a18.811,18.811,0,0,1,1.2-1.458l1.717-1.95h1.733l-3.979,4.058v3.01Z" transform="translate(15.763 0.069)" /><path d="M226.928,174.9a11.98,11.98,0,0,1-3.149.343c-3.361,0-5.873-1.286-5.873-3.664,0-2.271,2.531-3.792,6.227-3.792a10.117,10.117,0,0,1,2.83.322l-.389.76a8.567,8.567,0,0,0-2.388-.3c-2.795,0-4.652,1.083-4.652,2.978,0,1.779,1.68,2.9,4.563,2.9a9.8,9.8,0,0,0,2.529-.3Z" transform="translate(18.451 0.006)" /><path d="M228.4,174.984v-3l-3.786-4.068h1.768l1.681,1.95c.442.535.813.964,1.184,1.458h.035c.319-.461.743-.922,1.2-1.458l1.715-1.95h1.734l-3.98,4.058v3.01Z" transform="translate(21.285 0.069)" /><path d="M234.418,167.917h1.54v3.407h.053c.319-.273.637-.524.936-.755l3.644-2.653h1.91l-4.315,3,4.652,4.068h-1.821l-3.91-3.471-1.149.776v2.7h-1.54Z" transform="translate(25.449 0.069)" /><path d="M240.922,168c.779-.084,1.911-.148,2.954-.148a7.449,7.449,0,0,1,3.45.58,1.581,1.581,0,0,1,.936,1.36c0,.928-.99,1.549-2.228,1.8v.032a2.212,2.212,0,0,1,1.733,1.433,8.34,8.34,0,0,0,.92,1.95H247.1a6.427,6.427,0,0,1-.779-1.7c-.354-.98-1.009-1.349-2.405-1.381h-1.45v3.078h-1.54Zm1.54,3.237h1.574c1.644,0,2.689-.538,2.689-1.35,0-.917-1.113-1.317-2.742-1.317a11.192,11.192,0,0,0-1.521.074Z" transform="translate(28.216 0.04)" /><path d="M253.54,171.671h-4.616v2.549h5.165v.765h-6.722v-7.067h6.457v.765h-4.9v2.234h4.616Z" transform="translate(30.969 0.069)" /><path d="M253.282,168.015a32.683,32.683,0,0,1,3.273-.159,10.258,10.258,0,0,1,4.829.891,2.82,2.82,0,0,1,1.7,2.566,3.182,3.182,0,0,1-1.715,2.779,10.92,10.92,0,0,1-5.289,1.028c-1.115,0-2.016-.032-2.795-.085Zm1.54,6.32c.388.031.954.042,1.556.042,3.308,0,5.076-1.1,5.076-3.032.018-1.685-1.574-2.757-4.828-2.757a14.42,14.42,0,0,0-1.8.1Z" transform="translate(33.401 0.04)" /><path d="M263.956,174.984v-3l-3.786-4.068h1.77l1.68,1.95c.442.535.814.964,1.184,1.458h.035c.319-.461.743-.922,1.2-1.458l1.715-1.95h1.734l-3.981,4.058v3.01Z" transform="translate(36.327 0.069)" /><path d="M270.541,168.693h-3.627v-.776h8.827v.776H272.1v6.292h-1.556Z" transform="translate(39.194 0.069)" /><path d="M283.894,171.44c0,2.478-2.494,3.808-5.536,3.808-3.166,0-5.359-1.491-5.359-3.679,0-2.295,2.335-3.8,5.519-3.8C281.789,167.772,283.894,169.284,283.894,171.44Zm-9.268.107c0,1.555,1.379,2.938,3.82,2.938s3.821-1.362,3.821-3c0-1.448-1.239-2.949-3.8-2.949S274.626,169.971,274.626,171.548Z" transform="translate(41.048)" /><path d="M284.039,174.984l-3.025-7.067h1.627l1.416,3.575c.353.881.672,1.762.883,2.444h.035a19.5,19.5,0,0,1,.973-2.454l1.591-3.565h1.61l1.45,3.586a18.226,18.226,0,0,1,.832,2.423h.035c.248-.776.584-1.563.956-2.444L294,167.917h1.574l-3.377,7.067h-1.61l-1.5-3.68A14.007,14.007,0,0,1,288.3,169h-.035a13.556,13.556,0,0,1-.919,2.307l-1.7,3.68Z" transform="translate(44.854 0.069)" /><path d="M293.442,167.917v7.067h-1.556v-7.067Z" transform="translate(50.017 0.069)" /></g></g><g transform="translate(-220 -66.332)"><path d="M234.418,167.917h6.351V193.21h-6.351Z" transform="translate(80.01 -80.266)" /><path d="M244.851,183.831l15.032-15.914h7.878l-17.8,17.991,19.187,24.406h-7.513l-16.127-20.824Z" transform="translate(80.01 -88.818)" /></g></svg></a>
+    <nav class="nav" id="nav" aria-label="Menu główne">
+      <a href="#oferta">Oferta</a>
+      <a href="#realizacje">Realizacje</a>
+      <a href="#jak">Jak działamy</a>
+      <a href="#opinie">Opinie</a>
+      <a href="#o-nas">O nas</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <a class="hdr-tel" href="tel:+48665419413"><small>Infolinia</small><b>665 419 413</b></a>
+    <button class="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav"><span></span></button>
+  </div>
+</header>
+
+<main>
+<section class="hero" aria-label="Analitycy Kredytowi">
+  <picture>
+    <source media="(max-width: 819px)" type="image/webp" srcset="img/hero-m-480.webp 480w, img/hero-m-760.webp 760w, img/hero-m-1000.webp 1000w" sizes="100vw">
+    <img src="img/hero-1600.webp" srcset="img/hero-1024.webp 1024w, img/hero-1600.webp 1600w, img/hero-1920.webp 1920w" sizes="100vw" width="1920" height="885" alt="Analiza dokumentów finansowych z kalkulatorem i wykresami" fetchpriority="high">
+  </picture>
+  <div class="hero-box" id="heroBox">
+    <h1>Pośrednictwo kredytowe dla firm i osób prywatnych<span>Twoje finansowanie bez barier</span></h1>
+    <p>Kredyty, pożyczki, leasing i faktoring z banków i spoza nich. Zajmujemy się także sytuacjami, w których tradycyjna bankowość często odmawia.</p>
+    <a class="btn btn-white" href="#kontakt">Opisz swoją sytuację <span class="ar" aria-hidden="true"></span></a>
+    <div class="hero-meta"><span>Działamy w całej Polsce</span><a href="mailto:kontakt@analitycy-kredytowi.pl">kontakt@analitycy-kredytowi.pl</a></div>
+  </div>
+</section>
+
+<section class="sec" id="oferta">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Usługi finansowe dla Ciebie i Twojej firmy</h2>
+      <p>Dobieramy finansowanie do sytuacji klienta: od kredytu gotówkowego po leasing zwrotny linii produkcyjnej. Wybierz usługę, a w formularzu od razu zaznaczymy, czego dotyczy zapytanie.</p>
+    </div>
+    <ul class="tiles">
+      <li class="tile"><a href="#kontakt" data-u="Kredyty firmowe"><img src="img/t-firmowe-320.webp" width="320" height="320" loading="lazy" alt="Podpisanie umowy kredytu firmowego"><span class="lab">Kredyty firmowe</span></a></li>
+      <li class="tile"><a href="#kontakt" data-u="Faktoring i faktoring zakupowy"><img src="img/t-faktoring-320.webp" width="320" height="320" loading="lazy" alt="Rozliczenie faktur na kalkulatorze"><span class="lab">Faktoring i faktoring zakupowy</span></a></li>
+      <li class="tile"><a href="#kontakt" data-u="Leasing zwrotny nieruchomości"><img src="img/t-leasingzw-320.webp" width="320" height="320" loading="lazy" alt="Podpisanie umowy leasingu zwrotnego"><span class="lab">Leasing zwrotny nieruchomości</span></a></li>
+      <li class="tile"><a href="#kontakt" data-u="Leasing bez BIK"><img src="img/t-leasingbik-320.webp" width="320" height="320" loading="lazy" alt="Doradca przy ciągniku rolniczym"><span class="lab">Leasing bez BIK</span></a></li>
+      <li class="tile"><a href="#kontakt" data-u="Pożyczki Agro"><img src="img/t-agro-320.webp" srcset="img/t-agro-320.webp 320w, img/t-agro-560.webp 560w" sizes="(max-width:819px) 46vw, (max-width:1279px) 23vw, 15vw" width="320" height="320" loading="lazy" alt="Pole uprawne gospodarstwa rolnego"><span class="lab">Pożyczka Agro</span></a></li>
+      <li class="tile"><a href="#kontakt" data-u="Odkupimy nieopłaconą fakturę"><img src="img/t-faktura-320.webp" width="320" height="320" loading="lazy" alt="Zestawienie faktur z długopisem"><span class="lab">Odkupimy nieopłaconą fakturę</span></a></li>
+      <li class="tile"><a href="#kontakt" data-u="Kredyty hipoteczne"><img src="img/t-hipoteczne-320.webp" srcset="img/t-hipoteczne-320.webp 320w, img/t-hipoteczne-560.webp 560w" sizes="(max-width:819px) 46vw, (max-width:1279px) 23vw, 15vw" width="320" height="320" loading="lazy" alt="Rodzina przed własnym domem"><span class="lab">Kredyty hipoteczne</span></a></li>
+      <li class="tile"><a href="#kontakt" data-u="Pożyczki hipoteczne"><img src="img/t-pozhip-320.webp" width="320" height="320" loading="lazy" alt="Klucz do domu i banknoty"><span class="lab">Pożyczki hipoteczne</span></a></li>
+      <li class="tile"><a href="#kontakt" data-u="Kredyty gotówkowe"><img src="img/t-gotowkowe-320.webp" width="320" height="320" loading="lazy" alt="Banknoty w dłoni"><span class="lab">Kredyty gotówkowe</span></a></li>
+      <li class="tile"><a href="#kontakt" data-u="Pożyczka pozabankowa"><img src="img/t-pozabankowa-320.webp" srcset="img/t-pozabankowa-320.webp 320w, img/t-pozabankowa-560.webp 560w" sizes="(max-width:819px) 46vw, (max-width:1279px) 23vw, 15vw" width="320" height="320" loading="lazy" alt="Model domu na banknotach"><span class="lab">Pożyczka pozabankowa</span></a></li>
+      <li class="tile"><a href="#kontakt" data-u="Oddłużanie z chwilówek"><img src="img/t-chwilowki-320.webp" srcset="img/t-chwilowki-320.webp 320w, img/t-chwilowki-560.webp 560w" sizes="(max-width:819px) 46vw, (max-width:1279px) 23vw, 15vw" width="320" height="320" loading="lazy" alt="Kobieta przelicza domowy budżet"><span class="lab">Oddłużanie z chwilówek</span></a></li>
+      <li class="tile tile-cta"><a href="#kontakt" data-u=""><b>Nie wiesz, które finansowanie pasuje?</b><span>Zostaw kontakt - oddzwonimy i przedstawimy konkretną propozycję.</span><i>Zapytaj <span class="ar" aria-hidden="true" style="display:inline-block;width:18px;height:2px;background:#fff;transform:skewX(-22deg)"></span></i></a></li>
+    </ul>
+    <p class="src-note"><b>Źródła finansowania:</b> banki, banki komercyjne, fundusze inwestycyjne i inwestorzy prywatni.</p>
+  </div>
+</section>
+
+<section class="hard" aria-labelledby="h-hard">
+  <div class="hard-img"><img src="img/band-1400.webp" srcset="img/band-800.webp 800w, img/band-1400.webp 1400w" sizes="(max-width:819px) 100vw, 50vw" width="1400" height="933" loading="lazy" alt="Analiza domowych finansów przy biurku"></div>
+  <div class="hard-txt">
+    <h2 id="h-hard">Pomoc w trudnych sytuacjach</h2>
+    <p class="q">Masz zaległości, negatywny BIK lub problemy z uzyskaniem kredytu w banku?</p>
+    <p>Zajmujemy się niestandardowymi przypadkami, w których tradycyjna bankowość często odmawia. Szukamy rozwiązań alternatywnych i do każdego klienta podchodzimy indywidualnie: od analizy zdolności po negocjacje warunków.</p>
+    <ul class="ticks">
+      <li>Oferty dopasowane indywidualnie - bankowe i pozabankowe</li>
+      <li>Finansowanie także w skomplikowanych przypadkach</li>
+      <li>Wszystkie informacje przetwarzamy z zachowaniem pełnej poufności</li>
+    </ul>
+    <p class="fine">Decyzję o przyznaniu finansowania i jego warunkach podejmuje bank lub instytucja finansująca po ocenie wniosku.</p>
+  </div>
+</section>
+
+<section class="sec dark" id="realizacje">
+  <div class="dark-edge" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="real-top">
+      <div>
+        <h2>Zrealizowane finansowania w całej Polsce</h2>
+        <p>Pomogliśmy już ponad 3000 klientom uzyskać kredyty, pożyczki i leasingi. Łącznie to <b>235 mln zł</b> finansowania i <b>923</b> zamknięte transakcje. Kilka przykładów - kliknij punkt na mapie albo przewiń karty.</p>
+      </div>
+      <div class="map" id="map">
+        <svg viewBox="0 0 612.757 577.232" aria-hidden="true" focusable="false"><path d="m 52.276011,352.46195 2.36,0.07 0.29,-2.89 3.6,-0.4 0.81,-2.95 5.95,-3.59 8.96,5.37 0.66,-5.96 2.23,0.06 -0.66,-3.08 1.68,-2.79 5.32,1.61 0.33,-1.34 6.37,5.62 0.42,2.27 6.84,-6.97 0.26,-3.5 6.409999,-1.97 2.07,-8.32 -2.23,-1.11 2.96,-2.13 0.13,-2.99 6.71,-2.31 -0.76,-2.31 2.48,-0.73 -2.53,-1.2 1.22,-1.55 2.67,0.08 0.36,2.13 5.87,2.22 2.69,-0.54 -0.96,5.24 3.32,-0.21 3.49,5.01 5.85,-5.43 0.62,-3.94 2.56,-2.63 0,0 7.73,0.08 4.86,3.32 2.2,4.22 -1.49,4.67 7.83,1.25 1.9,4.56 10.1,5.38 5.92,-0.05 0.27,-2.03 2.64,-0.87 5.91,0.79 0.68,-6.08 5.02,-1.64 10.41,1.97 5.35,4.14 0,0 0,0.8 0,0 1.44,3.67 -4.13,3.22 2.18,9.91 11.94,-1.04 -1.79,6.74 2.22,1.2 -0.2,8.44 3.25,5.27 0,0 -8,3.01 -3.76,-2.77 -0.6,2.09 -3.19,1.38 2.15,6.94 -3.75,2.19 -0.28,4.57 1.61,2.08 -3.09,0.28 1.34,1.64 -5.02,0.39 -0.22,5.53 -3.59,-1.48 -0.97,2.42 2.74,1.09 -0.8,2.64 -3.4,1.14 1.16,6.23 -3.82,-0.98 -1.87,2.24 2.32,2.52 -4.26,3.04 2.21,2.27 -1.4,0.85 0.59,5.94 -7.62,1.15 -3.49,6.22 -0.78,7.23 -6.06,-1.5 0,0 -0.28,0.19 0,0 -2.18,3.2 0,0 -3.14,3.82 3.09,1.75 2.31,7.05 3.41,1.25 1.51,6.94 -1.77,1.23 -1.37,-2.71 -1.31,2.13 -3.41,-0.07 -1,2.22 -2.29,-0.67 -3.75,5.85 -5.71,4.4 -6.63,-4.2 -1.45,-7.41 -7.49,-9.49 -3.22,-0.75 -1.35,-4.81 -3.44,-0.33 -1.54,1.51 -5.1,-6.22 7.11,-7.13 2.92,0.49 2.44,-2.56 0.23,-3.88 2.43,-0.97 -6.22,-8 -6.61,-0.88 -0.97,3.55 -1.92,0.65 -5.15,-3.4 -4.76,6.18 -2.31,-1.41 2.15,-1.6 -1.93,-5.2 -7.87,0.94 -2.8,-7.76 -6.689999,1.75 -6.18,-3.78 -4.9,-0.12 -5.22,-2.92 -3.95,2.95 -0.42,-5.63 -5.48,-5.21 -0.17,-8.62 -2.19,-1.9 -4.1,1.22 -0.14,-3.26 -2.42,2.89 -4.16,-3.17 -4.64,1.15 -1.03,1.98 3.27,2.25 -1.98,4.27 0.75,5.41 -10.88,-0.4 8.56,-17.45 4.6,-18.8 -0.3,-4.7 z"/><path d="m 199.87601,140.08195 1.83,-9.57 5.46,-4.05 0.85,3.64 3.03,0.68 2.05,-1.87 3.9,2.64 -0.92,-2.94 3.92,-0.19 -1.01,-2.98 2.33,-5.97 4.47,0.44 4.5,-2.56 -1.95,-5.15 5.3,0.52 3.58,3.4 4.24,-6.08 2.35,2.49 2.43,-0.85 1.08,2.42 1.93,-1.27 0,0 0,1.09 0,0 4.17,0.14 -0.25,4.37 11.97,1.53 0.72,-1.66 2.74,-0.19 -0.25,2.46 2.4,2.61 1.91,-0.44 -0.5,-1.86 3.18,0.39 1.55,-2.22 4.72,1.15 2.33,-1.62 -1.82,5.83 1.84,3.84 8.36,1.09 -0.17,1.82 5.48,-1.92 9.22,1.2 0,0 3.42,1.53 0.28,5.8 4.19,10.88 1.9,1.37 0.83,-2.1 4.3,-0.39 3.84,3.26 -0.16,1.82 3.93,-0.77 1.43,3.71 9.13,-0.77 2.7,7.66 -2.77,1.38 0.29,2.41 3.16,0.74 0.09,2.4 0,0 -0.32,0 0,0 1.48,5.21 0,0 -4.22,3.12 0,0 -0.45,-0.15 0,0 -1.11,1.69 -1.89,-0.54 1.07,7.46 2.27,1.7 -1.61,3.42 1.01,3.19 -7.65,-3.48 1.35,3.04 -2.97,2.43 -5.12,-0.99 4.13,8.54 -2.49,-0.21 -2.91,4.85 4.89,4.66 -0.46,2.02 1.61,-0.07 -1.48,1.76 1.61,2.67 -5.15,-1.79 0.58,5.09 -2.17,0.17 -2.86,4.6 3.21,2.54 -3.48,3.17 0,0 -0.81,0.01 0,0 -0.04,4.17 -1.7,-0.24 4.41,1.75 -4.7,6.35 -3.15,0.02 1.51,1.72 0,0 0.35,0.57 0,0 -0.36,2.69 0,0 -4.88,3.23 0.63,2.24 -1.23,-1.7 -9.39,2.67 0,0 -4.71,-2.34 0.38,-1.91 -3.27,-2.46 -0.58,3.36 -9.64,3.32 -2.37,-6.42 -2.19,-0.22 0.22,-2.84 -1.61,0.63 -0.5,-2.83 -3.43,-1.75 -1.99,0.55 -2.27,-3.59 -2.02,-0.55 -1.61,2.8 -4.62,0.62 -1.24,-7.26 -6.52,6.11 -3.45,-0.19 -0.49,-2.18 -6.33,-1.47 0.19,-3.36 -6.57,0.94 0.48,-3.47 -1.32,1.09 -1.97,-2.95 -1.19,1.01 -2.85,-5.62 -2.3,0.55 -2.78,-2.16 -1.38,2.32 -0.41,-2.3 -5.16,5.62 0.17,-4.76 -3.14,-0.43 0.09,-5.63 -3.23,0.43 -3.4,3.25 -3.18,-0.86 0.96,-4.72 -5.05,-2.8 0.33,-2.92 5.78,-0.32 0.9,-14.06 -7.48,-5.57 -4.81,0.91 -0.9,-2.18 1.48,-2.16 0,0 0.3,-0.06 0,0 -0.44,-5.92 2.35,-1.44 -0.65,-3.96 2.39,-1.2 -3.22,-1.31 0.64,-4.69 -1.64,-1.48 5.51,-1.26 1.48,-4.09 -6.04,-8.07 -3.49,-1.17 -0.9,1.44 -1.19,-3.46 z"/><path d="m 315.78601,250.51195 3.94,4.72 6.65,-0.82 2.87,1.52 -0.23,1.81 7.31,2.92 2.55,3.47 2.55,-1.99 2.86,1.32 3.69,-2.05 2.77,0.47 2.56,-3.17 4.13,2.61 0.57,2.52 3.18,-1.22 3.26,3.31 -0.49,4.82 2.26,3.84 3.6,0.15 1.63,2.81 4.61,1.35 -0.76,4.71 -3.43,2.73 3.34,1.72 1.26,2.84 0.3,1.69 -2.92,2.86 4.27,-0.08 0.47,2.42 6.81,-2.88 3.52,2.33 1.09,2.92 3.7,0.19 3.22,7.31 -3.81,0.33 1.45,0.7 0.12,6.15 4.6,2.23 0.01,2.82 -2.31,3.88 -6.18,-1.32 -3.23,-2.86 -4.62,3.78 2.61,8.5 2.14,1.57 -1.07,5.22 5,-0.89 0.53,2.18 -2.46,6.05 -4.01,4.17 -0.42,3.54 0,0 -0.86,3.01 -2.62,0.97 1.29,3.99 -1.37,3.19 -2.38,-2.01 -1.72,1.63 -2.68,-1.75 -1.09,0.34 1.37,4 -1.44,0.99 -3.7,-0.35 -1.59,1.72 -6.12,-2.44 -2.87,1.24 1.31,3.06 -2.52,2.32 0.1,6.09 4.67,1.46 -1.79,9.23 -4.2,-2.17 -5.25,-6.14 -2.9,7.07 0.88,4.34 0,0 0,0.97 0,0 -0.85,1.4 0,0 -0.09,-0.01 0,0 -1.03,1.08 0,0 -0.47,0.35 0,0 -1.04,0.12 0,0 0.08,0.24 0,0 -2.44,3.36 0,0 -4.57,1.09 -0.37,-3 -4.86,-2.51 -5.58,1.98 -1.1,-5.22 -4.06,-5.92 -1.29,-0.84 -2.4,1.91 -2.43,-2.97 0.52,-2.22 -3.89,1.28 0.41,2.73 -2.69,1.64 -3.63,-2.94 -1.73,0.77 -2.06,-3.24 -2.02,0.58 -7.17,-6.17 -1.98,0.33 -2.18,3.72 -1.56,-1.57 -11.66,2.08 0,0 -5,-2.85 -2.15,-5.46 -1.74,0.23 -1.84,4.53 -1.49,-2.78 -9.74,-1.43 -8.89,-3.93 0,0 1.47,-9.43 -4.28,0.57 -1.86,-8.75 2.76,-0.51 1.08,-2.78 3.43,-0.38 0.77,-2.92 -1.44,-1.97 2.8,-0.79 5.41,3.16 3.35,-5.51 -1.46,-5.68 1.25,-6.02 -1.76,-0.68 2.03,-4.95 -1.71,-0.74 3.53,-4.5 -0.43,-4 1.63,-1.67 -1.16,-2.54 1.89,-1.29 -0.29,-2.15 1.91,0.46 0.19,-3.06 1.84,-0.61 0.76,2.23 4.83,-1.17 5.7,2.14 0.56,-3.98 5.68,-6.71 -4.06,-3.75 -0.82,-9.57 1.92,-1.18 5.19,1.77 0.87,-2.7 5.27,-0.13 1.01,-3.89 -2.17,-2 1.21,-5.72 3.96,-1.58 5.84,1.63 -1.06,-2.12 2.03,-1.37 -0.29,-2.44 -4.26,-0.55 0.99,-6.05 0,0 9.39,-2.67 1.23,1.7 -0.63,-2.24 z"/><path d="m 550.36601,261.67195 2.86,0.17 0,0 1.46,0.79 0.1,4.9 11.53,2.55 1.83,2.78 4.67,-0.67 -0.83,2.65 3.72,4.2 3.05,-0.69 3.27,3.66 -0.6,2.22 2.81,6.59 -3.78,4.21 1.15,1.57 -2.02,1.61 1.59,2.39 -0.48,2.01 -1.46,-0.42 -0.28,3.52 2.34,3.97 -6.83,7 1.89,2.99 -1.29,5.36 1.69,10.73 2.69,0.57 0.69,3.1 2.62,0.78 -0.8,4.2 3.23,2.6 -1.08,4.96 -2.89,3.47 0.55,4.01 3.12,0 2.6,7.58 7.99,6.12 -0.77,4.96 3.17,2.5 1.55,5.73 -1.32,0.41 2.65,1.97 0.85,3.76 5.06,5.73 5.67,2.24 -2.44,2.8 -6.26,-0.16 -2.53,2.62 0.37,3.75 3.37,0.92 -0.35,4.04 3.31,0.34 -0.51,3.97 2.02,4.11 -0.36,7.12 -3.51,11.18 -2.23,3.25 -16.49,2.25 -2.61,5.42 -8.72,7.86 0,0 -2.14,-1.19 0.63,-3.27 -6.87,-0.81 1.7,-4.27 0,0 -0.44,0 0,0 -2.96,-2.01 0.55,-3.51 -1.74,-0.54 -6.57,5.05 -4.19,-3.61 -9.98,10.38 -25.03,-1.99 0.03,-1.87 4.7,-2.6 -11,1.12 -4.15,-5.32 -2.23,0.38 0.64,-2.6 2.89,-1.11 -0.83,-2.59 6.08,0.83 2.6,-2.46 -3.85,-0.46 3.04,-1.03 -0.38,-1.39 -2.82,0.12 0.53,-6.62 -3.37,-1.46 -2.94,0.98 -4.24,-3.72 -5.5,-0.48 -2.96,-4.18 -4.26,-0.19 4.14,-8.58 -2.28,-4.17 -6.41,-1.89 -3.31,3.39 -6.7,1.1 -2.6,-3.2 0,0 -1.59,-2.93 -2.16,-21.93 0,0 -0.84,-5.52 1.62,-3.1 -1.88,-3.9 3.15,-9.16 -2.81,-0.34 1.8,-0.82 1.71,-5.09 -1.21,-2.6 -1.58,0.57 -2.84,-2.46 2.6,-2.61 2.24,1.01 2.03,-5.63 -3.28,-8.78 -6.52,0.12 -5.83,-5.35 1.89,-4.09 6.24,4.7 0.69,-2.84 5.16,-0.55 -0.02,-2.62 3.69,-2.19 0.3,-2.08 -3.7,-3.64 6.85,-4.6 -1.96,-4.03 -3.96,1.16 -0.82,-1.91 3.63,-4.06 -1.95,-5.24 0.82,-3.95 9.16,-5.33 5.32,2.11 1.53,-2.48 6.89,1.67 2.83,-2.8 2.04,3.39 4.59,-0.7 4.63,-4.85 7.61,5.78 2.84,-4.66 -1.28,-2.71 3.45,-3.3 5.93,4.43 2.38,-1.31 4.06,1.64 0.44,-4.1 3.4,-0.03 -1.57,-2.93 3.03,-3.41 5.4,0.38 -2.64,-4.26 z"/><path d="m 29.506011,229.60195 -0.07,-3.59 2.09,-1.77 4.71,2.56 2.27,-1.43 3.25,-11.53 3.98,-3.2 -0.79,-3.01 3.89,-1.21 -2.05,-1.91 2.03,-2.75 5.28,4.37 2.56,-1.8 2.21,2.53 14.95,-6.38 -2.16,-6.48 4.55,1.01 3.33,-3.79 8.18,-2.82 5.7,3.18 2.63,-2.22 2.41,1.22 2.289999,-1.28 -0.979999,-2.08 3.249999,-1.31 -1.68,-2.15 2.51,-0.51 -0.53,-1.96 3.09,-1.37 -0.42,-2.36 8.12,1.94 -1.5,6.34 0,0 -0.6,4.16 0,0 0,0.34 0,0 0.47,3.08 0,0 0.17,0.12 0,0 0.79,10.74 -4.27,2.06 -0.82,2.47 2.6,1.13 0.64,7.19 -8.67,2.02 1.16,3.4 -2.25,6.75 4.27,6.14 -1.43,2.48 3.21,3.2 1.03,4.35 -3.1,1.99 -1.39,-2.71 -0.78,1.75 5.55,4.78 -2.96,12.84 1.53,11.54 -1.85,3.41 4.27,4.48 1.28,-1.71 2.25,1.04 0.53,2.27 -1.83,2.56 3.65,4.84 6.41,-1.85 0.88,6.68 -2.21,3.12 3.68,0.2 2.39,2.16 2.75,-3.51 3,0.8 5.46,4.6 2.21,6.55 0,0 -2.56,2.63 -0.62,3.94 -5.85,5.43 -3.49,-5.01 -3.32,0.21 0.96,-5.24 -2.69,0.54 -5.87,-2.22 -0.36,-2.13 -2.67,-0.08 -1.22,1.55 2.53,1.2 -2.48,0.73 0.76,2.31 -6.71,2.31 -0.13,2.99 -2.96,2.13 2.23,1.11 -2.07,8.32 -6.409999,1.97 -0.26,3.5 -6.84,6.97 -0.42,-2.27 -6.37,-5.62 -0.33,1.34 -5.32,-1.61 -1.68,2.79 0.66,3.08 -2.23,-0.06 -0.66,5.96 -8.96,-5.37 -5.95,3.59 -0.81,2.95 -3.6,0.4 -0.29,2.89 -2.36,-0.07 0,0 -1.36,-10.33 -13.52,-5.97 -1.12,-3.07 3.26,-4.4 -0.46,-5.18 -5.39,-6.45 -1.4,-6.86 -3.35,-2.52 1.16,-3.39 5.16,-4.55 1.18,-10.01 2.73,-6.1 -4.72,-5.15 1.96,-11.94 -7.41,-3.73 -3.55,-12.06 0.91,-3.83 5.26,-6.14 -1.91,-3.88 2.08,-3.85 z"/><path d="m 356.06601,435.48195 2.32,-1.39 17.38,4.79 0.03,3.39 4.08,6.48 -2.68,1.19 0.18,2.55 4.23,3.07 -1.57,2.02 3.45,3.27 -1.37,2.56 2.2,0.26 0.28,1.66 15.9,-1.88 6.83,-7.39 2.82,1.54 3.53,-3.16 10.05,-1.02 4.65,-3.64 2.57,2.35 1.98,-2.37 0,0 0.6,3.86 -4.45,5.21 1.88,4.38 -1.48,6.53 1.96,0.55 -1.77,0.41 2.55,0.67 0.59,2.74 -2,0.47 1.23,1.53 -2.31,1.72 2.51,2.64 -2.59,4.18 1.95,5.39 5.76,0.43 0.99,2.02 -0.8,1.56 -3.06,-0.17 -0.17,3.14 -5.62,1.18 1.86,2.34 -0.76,3.61 5.45,0.14 1.11,1.95 3.01,0.42 2.49,5.29 0.73,4.96 -2.6,5.24 2.94,1.87 -0.85,2.37 3.71,4.71 -1.83,0.87 0.45,4.9 0,0 -7.4,-2.54 -4.02,5.46 -5.12,-3.07 -4.42,1.34 3.15,4.25 -3.79,1 -3.13,5.24 -3.72,1.01 -1.58,-2.74 -1.83,0.64 -0.59,-2.54 -1.67,1.25 -2.4,-0.9 0.75,-1.33 -3.07,-1.2 -1.18,-4.26 -5.63,1.41 -1.92,-1.6 -2.54,3.9 -6.37,-3.66 -2.46,-0.15 0.09,1.92 -0.9,-0.98 -1.56,1.51 -1.13,-1.59 -2.31,0.39 -1.22,5.56 -5.7,-0.73 -3.71,4.45 -0.8,-1.05 -3.9,12.69 -8.49,-5.17 -2.57,0.42 -1.82,3.11 -5.13,-0.21 -1.31,-3.36 3.43,-3.97 -1.68,-2.09 -0.28,-10.18 -4.45,2.16 -5.35,-2.04 0.66,-4.6 -3.52,0.23 -3.34,-10.96 -3.18,-1.62 -0.52,-2.16 0,0 0.83,-5.29 -5.96,-2.43 4.61,-4.34 -0.67,-3.22 -7.27,-1.17 -1.98,-7.72 -7.39,0.61 2.21,-7.79 -1.13,-0.97 -2.23,1.42 0,0 -0.65,0 0,0 -1.08,0.04 0,0 -0.75,0 0,0 -2.15,-1.08 1.89,-1.2 -0.23,-3.31 3.47,-5.84 3.88,-0.63 -1.19,-0.87 2.33,-5.28 0,0 0.33,0 0,0 0.28,1.89 1.06,-2.8 4.11,-0.58 1.53,-2.17 -1.32,-1.61 4.43,-1.7 0.68,-2.13 -6.2,-3.1 -1.07,-3.04 3.41,-2.68 7.6,-0.39 0.44,-3 -2.47,-1.87 0,0 0.32,-0.1 0,0 2.51,0.58 -0.5,-2.62 2.08,-1.98 3.86,1.09 3.98,-0.73 3.14,-2.89 8.56,0.53 2.84,-1.39 0.08,-1.89 4.39,-0.14 z"/><path d="m 344.56601,174.58195 5.17,0.78 -0.66,-3.99 5.11,-3.02 0,0 0.28,0.55 0,0 -0.55,3.45 4.17,2.77 7.24,-1.96 2.42,2.23 2.19,-1.07 8.52,1.78 4.34,-2.57 -0.66,-4.69 4.84,-3.75 5.94,2.12 6.32,-2.68 3.76,-6.22 8.07,2.02 1.32,-3.05 3.18,0.23 -0.99,-2.79 1.62,-1.3 3.81,-0.35 3.43,2.92 13.48,-9.88 5.34,1.04 5.13,-2.12 0.3,-2.38 8.99,-1.55 0,0 0.34,1.5 0,0 -0.46,0 0,0 2.6,3.99 -0.82,1.85 3.52,4.22 -1.89,3.64 2.38,-0.38 2.71,2.4 -4.16,-0.07 0,0 0.04,-0.41 0,0 -1.57,3.19 0.96,2.36 -2.06,-0.37 3.87,5.18 -1.13,0.7 2.21,4.43 -0.59,2.79 2.31,2.78 4.51,-0.55 3.63,5.47 4.44,-1.07 0,0 -1.09,1.59 0,0 1.08,1.71 -2.57,-0.71 -1.08,3.62 7.24,4.73 0,0 -0.52,0 0,0 2.29,2.28 -2.12,2.14 2.77,6.37 10.71,-0.79 0.26,-2.86 3.03,0.13 0.5,3.61 1.9,-0.41 -0.86,1.84 -2.85,0.06 2.22,5.9 2.21,-0.21 0.82,2.18 3.28,-2.16 -0.13,-1.62 4.3,0.81 0.56,13.51 -4.29,4.49 3.93,2.74 4.22,6.38 -0.94,3.97 2.54,1.82 -0.68,4.07 2.28,3.01 7.72,0.08 1.39,2.7 1.4,-1.88 5.95,2.54 6.2,-1.18 2.78,3.78 3.07,0.67 0.52,3.99 3.54,-1.63 1.27,1.65 0,0 -5.68,6.55 2.64,4.26 -5.4,-0.38 -3.03,3.41 1.57,2.93 -3.4,0.03 -0.44,4.1 -4.06,-1.64 -2.38,1.31 -5.93,-4.43 -3.45,3.3 1.28,2.71 -2.84,4.66 -7.61,-5.78 -4.63,4.85 -4.59,0.7 -2.04,-3.39 -2.83,2.8 -6.89,-1.67 -1.53,2.48 -5.32,-2.11 -9.16,5.33 -0.82,3.95 1.95,5.24 -3.63,4.06 0.82,1.91 3.96,-1.16 1.96,4.03 -6.85,4.6 3.7,3.64 -0.3,2.08 -3.69,2.19 0.02,2.62 -5.16,0.55 -0.69,2.84 -6.24,-4.7 -1.89,4.09 5.83,5.35 6.52,-0.12 3.28,8.78 -2.03,5.63 -2.24,-1.01 -2.6,2.61 2.84,2.46 1.58,-0.57 1.21,2.6 -1.71,5.09 -1.8,0.82 2.81,0.34 -3.15,9.16 1.88,3.9 -1.62,3.1 0.84,5.52 0,0 -3.19,2.84 -2.82,-0.24 -2,-3.52 -3.88,0.16 1.13,1.08 -5.27,1.57 -2.09,-0.94 0.3,1.95 -3.14,2.39 -4.93,-2.72 -1.9,-4.32 -12.16,0.44 0.67,-4.69 -4.45,-2.44 1.75,-3.16 -2.23,-2.67 -1.48,5.52 -3.68,1.22 -0.81,-2.07 -2.28,2.13 -3.16,-2.51 -0.23,3.47 -2.01,-0.78 -0.07,1.58 -8.5,-4.46 -1.94,2.18 0.71,-4.43 -5.65,-4.89 -3.19,0.98 -0.91,-5.65 -2.62,-1.86 1.31,-2.9 -5.43,-0.84 0,0 0.42,-3.54 4.01,-4.17 2.46,-6.05 -0.53,-2.18 -5,0.89 1.07,-5.22 -2.14,-1.57 -2.61,-8.5 4.62,-3.78 3.23,2.86 6.18,1.32 2.31,-3.88 -0.01,-2.82 -4.6,-2.23 -0.12,-6.15 -1.45,-0.7 3.81,-0.33 -3.22,-7.31 -3.7,-0.19 -1.09,-2.92 -3.52,-2.33 -6.81,2.88 -0.47,-2.42 -4.27,0.08 2.92,-2.86 -0.3,-1.69 -1.26,-2.84 -3.34,-1.72 3.43,-2.73 0.76,-4.71 -4.61,-1.35 -1.63,-2.81 -3.6,-0.15 -2.26,-3.84 0.49,-4.82 -3.26,-3.31 -3.18,1.22 -0.57,-2.52 -4.13,-2.61 -2.56,3.17 -2.77,-0.47 -3.69,2.05 -2.86,-1.32 -2.55,1.99 -2.55,-3.47 -7.31,-2.92 0.23,-1.81 -2.87,-1.52 -6.65,0.82 -3.94,-4.72 0,0 0.36,-2.69 0,0 -0.35,-0.57 0,0 -1.51,-1.72 3.15,-0.02 4.7,-6.35 -4.41,-1.75 1.7,0.24 0.04,-4.17 0,0 0.81,-0.01 0,0 3.48,-3.17 -3.21,-2.54 2.86,-4.6 2.17,-0.17 -0.58,-5.09 5.15,1.79 -1.61,-2.67 1.48,-1.76 -1.61,0.07 0.46,-2.02 -4.89,-4.66 2.91,-4.85 2.49,0.21 -4.13,-8.54 5.12,0.99 2.97,-2.43 -1.35,-3.04 7.65,3.48 -1.01,-3.19 1.61,-3.42 -2.27,-1.7 -1.07,-7.46 1.89,0.54 1.11,-1.69 0,0 0.45,0.15 0,0 z"/><path d="m 224.86601,369.22195 3.1,1.56 -1.85,5.38 3.97,1.51 16.72,-6.84 0,0 8.89,3.93 9.74,1.43 1.49,2.78 1.84,-4.53 1.74,-0.23 2.15,5.46 5,2.85 0,0 1.83,3.3 -2.43,1.24 0.07,2.92 -2.33,1.66 1.76,3.74 -1.33,5.48 -3.27,2.59 -0.74,3.07 -2.98,0.74 4.31,5.19 -5.64,4.2 2.72,7.49 4.11,1.78 0.3,5.28 -10.44,0.47 2.85,8.15 -6.23,-2.36 0.52,4.23 -1.46,2.03 1.82,2.87 -2.21,3.08 2.93,3.13 -0.74,4.62 1.73,0.27 0.29,2.33 -4.52,-0.98 -7.12,4.12 0.42,1.78 0,0 0.38,-0.03 0,0 -7.82,1.35 -0.66,1.4 -0.56,-1.37 -2.4,0.59 0.66,6.23 -2.38,4.24 0,0 -1.82,2.57 2.44,0.21 0.05,2.96 -2.48,-1.27 -8.25,4.33 -2.53,-3.62 -3.16,-0.9 -3.54,-8.13 -4.17,-0.5 -3.49,-4.56 10.1,-4.5 0.39,-2.82 -2.42,-2 1.67,-4.03 -2.1,-2.04 -1.87,-0.66 0.06,2.57 -4.54,3.3 -7.23,-0.85 -3.38,2.21 -3.29,-2.97 -2.06,1.76 -0.13,-6.07 -4.05,0.83 -5.06,-4.29 0.16,-2.05 -3.68,0.46 -2.04,-2.29 -8.27,-1.27 -3.85,-2.77 0,0 2.18,-3.2 0,0 0.28,-0.19 0,0 6.06,1.5 0.78,-7.23 3.49,-6.22 7.62,-1.15 -0.59,-5.94 1.4,-0.85 -2.21,-2.27 4.26,-3.04 -2.32,-2.52 1.87,-2.24 3.82,0.98 -1.16,-6.23 3.4,-1.14 0.8,-2.64 -2.74,-1.09 0.97,-2.42 3.59,1.48 0.22,-5.53 5.02,-0.39 -1.34,-1.64 3.09,-0.28 -1.61,-2.08 0.28,-4.57 3.75,-2.19 -2.15,-6.94 3.19,-1.38 0.6,-2.09 3.76,2.77 z"/><path d="m 473.17601,406.15195 2.6,3.2 6.7,-1.1 3.31,-3.39 6.41,1.89 2.28,4.17 -4.14,8.58 4.26,0.19 2.96,4.18 5.5,0.48 4.24,3.72 2.94,-0.98 3.37,1.46 -0.53,6.62 2.82,-0.12 0.38,1.39 -3.04,1.03 3.85,0.46 -2.6,2.46 -6.08,-0.83 0.83,2.59 -2.89,1.11 -0.64,2.6 2.23,-0.38 4.15,5.32 11,-1.12 -4.7,2.6 -0.03,1.87 25.03,1.99 9.98,-10.38 4.19,3.61 6.57,-5.05 1.74,0.54 -0.55,3.51 2.96,2.01 0,0 0.44,0 0,0 -1.7,4.27 6.87,0.81 -0.63,3.27 2.14,1.19 0,0 -16.02,13.82 -38.94,54.02 3.49,3.42 2.98,12.33 -0.4,10.64 -1.51,1.59 1.95,1.42 -2.4,3.75 0.7,0.98 2.23,-1.67 -1,2.22 3.05,0.08 2.46,4.27 3.66,1.43 -1.49,2.77 1.48,5.49 -2.6,0.48 -4.7,-4.72 -5.39,1.29 -5.75,-5.31 -5.42,1.01 -4.69,-1.25 -3.34,-4.2 -2.99,0.82 -5.65,-1.62 -0.13,-2.83 -2.1,0.81 -8.6,-3.95 -1.01,-5.81 -4.3,-6.32 -3.61,-0.21 -3.81,-3.82 -2.69,1.17 -0.45,2.25 -4.13,-5.43 -3.83,-0.44 -1.62,-2.89 -9.7,3.21 -4.72,-1.85 0,0 -0.45,-4.9 1.83,-0.87 -3.71,-4.71 0.85,-2.37 -2.94,-1.87 2.6,-5.24 -0.73,-4.96 -2.49,-5.29 -3.01,-0.42 -1.11,-1.95 -5.45,-0.14 0.76,-3.61 -1.86,-2.34 5.62,-1.18 0.17,-3.14 3.06,0.17 0.8,-1.56 -0.99,-2.02 -5.76,-0.43 -1.95,-5.39 2.59,-4.18 -2.51,-2.64 2.31,-1.72 -1.23,-1.53 2,-0.47 -0.59,-2.74 -2.55,-0.67 1.77,-0.41 -1.96,-0.55 1.48,-6.53 -1.88,-4.38 4.45,-5.21 -0.6,-3.86 0,0 0.25,-0.03 0,0 0.5,-0.36 0,0 5.64,-6.07 8.13,-3.3 0.16,-3.32 9.16,-2.47 4.51,-8.66 5.09,-4.19 1.91,1.04 z"/><path d="m 534.05601,45.131946 8.8,2.7 -1.01,2.15 4.06,1.89 -1.12,2.89 2.98,1.81 3.27,-1.68 5.5,5.73 6.29,0.99 9.11,10.32 2.54,9.03 -0.2,3.57 -2.62,3.3 2.07,4.23 0.5,9.920004 1.71,1.11 -0.2,8.45 2.03,2.72 4.75,22.82 8.54,25.37 7.17,11.69 -2.78,7.74 4.52,12.33 -1.82,2.12 1.34,22.66 -12.42,10.6 -5.88,0.03 -10.11,5.33 -6.98,8.27 -10.87,18.62 0,0 -2.86,-0.17 0,0 -1.27,-1.65 -3.54,1.63 -0.52,-3.99 -3.07,-0.67 -2.78,-3.78 -6.2,1.18 -5.95,-2.54 -1.4,1.88 -1.39,-2.7 -7.72,-0.08 -2.28,-3.01 0.68,-4.07 -2.54,-1.82 0.94,-3.97 -4.22,-6.38 -3.93,-2.74 4.29,-4.49 -0.56,-13.51 -4.3,-0.81 0.13,1.62 -3.28,2.16 -0.82,-2.18 -2.21,0.21 -2.22,-5.9 2.85,-0.06 0.86,-1.84 -1.9,0.41 -0.5,-3.61 -3.03,-0.13 -0.26,2.86 -10.71,0.79 -2.77,-6.37 2.12,-2.14 -2.29,-2.28 0,0 0.52,0 0,0 -7.24,-4.73 1.08,-3.62 2.57,0.71 -1.08,-1.71 0,0 1.09,-1.59 0,0 -4.44,1.07 -3.63,-5.47 -4.51,0.55 -2.31,-2.78 0.59,-2.79 -2.21,-4.43 1.13,-0.7 -3.87,-5.18 2.06,0.37 -0.96,-2.36 1.57,-3.19 0,0 -0.04,0.41 0,0 4.16,0.07 -2.71,-2.4 -2.38,0.38 1.89,-3.64 -3.52,-4.22 0.82,-1.85 -2.6,-3.99 0,0 0.46,0 0,0 -0.34,-1.5 0,0 0.72,0.04 0,0 4.77,-1.29 10.62,3.56 3.84,-5.19 4.03,-1.33 2.32,2.41 20.1,-16.22 3.92,-2.63 2.94,1.81 -0.56,-3.3 3.24,-0.17 4.3,-3.75 1.36,1.73 1.3,-3.89 1.06,0.7 0,0 0.77,-0.4 0,0 3.69,-2.88 0.91,-5.51 3.87,-4.52 -0.73,-5.080004 -6.94,-11.58 -3.4,-2.14 1.47,-4.4 -2.6,-4.98 -2.75,0.49 -4.66,-5.92 2.64,-4.37 6.48,-2.02 0.96,-1.98 3.66,0.79 4.61,-1.76 1.89,-5.24 -1.14,-2.27 0,0 2.86,-4.42 z"/><path d="m 255.10601,0.2519458 22.84,13.6100002 9.27,8.47 -0.74,3.58 -6.45,-9.89 -17.22,-10.7300002 -1.71,6.1700002 4.71,3.71 -0.1,6.56 2.89,-0.88 -0.19,3.28 3.25,6.22 -1.2,1.38 -2.56,-0.86 3.28,1.51 0.32,8.05 3.81,4.16 5.99,0.86 -2.08,0.64 2.63,2.59 9.97,2.94 2.77,-2.08 3.63,2.26 12.67,-0.89 13.08,-3.12 13.69,-6.93 -14.48,8.71 -11.38,3.15 2.12,2.41 0.2,4.05 0,0 3.71,6.59 -4.4,3.62 1.31,2.21 -3.06,8.78 4.45,2.02 -1.14,1.74 1.15,1.85 1.94,-0.94 5.3,2.75 -1.62,3.08 1.48,3.18 11.07,-2.41 -2.99,7.53 0,0 0,0.33 0,0 -4.04,7.100004 1.26,1.07 -1.07,2.95 -2.14,-3.21 -5.66,-1.46 -2.21,1.21 -0.98,6.62 -4.71,5.03 -0.16,5.17 -2.29,0.15 -2.92,3.39 0.45,2.92 0,0 -9.22,-1.2 -5.48,1.93 0.17,-1.83 -8.36,-1.09 -1.84,-3.84 1.82,-5.83 -2.33,1.62 -4.72,-1.14 -1.55,2.21 -3.19,-0.38 0.5,1.85 -1.91,0.44 -2.39,-2.61 0.25,-2.46 -2.75,0.2 -0.71,1.66 -11.98,-1.53 0.25,-4.36 -4.16,-0.14 0,0 0,-1.09 0,0 -1.93,1.28 -1.09,-2.42 -2.43,0.84 -2.34,-2.48 -4.25,6.08 -3.58,-3.4 -5.3,-0.53 1.95,5.15 -4.5,2.56 -4.47,-0.44 -2.33,5.97 1.01,2.99 -3.92,0.18 0.92,2.94 -3.89,-2.65 -2.05,1.88 -3.03,-0.69 -0.85,-3.63 -5.46,4.04 -1.83,9.57 0,0 -3.31,-1.18 0,0 -0.24,-0.09 0,0 -1.78,-2.67 -3.85,-0.56 0,0 -1.32,0.06 0,0 -3.49,0.7 -4.06,-1.63 -2.63,2.55 -3.2,0.02 0.02,-3.3 -3.11,0.58 -3.44,-11.61 0,0 -2.17,-9.18 5.27,-5.36 -4.44,-3.3 0.03,-3.76 1.34,-1.29 4.65,0.73 0.81,-3.420004 -6.46,-3.65 -0.13,-3.64 -2.04,-2.34 -1.54,-0.81 -0.76,2.57 0,0 -0.71,0.06 0,0 -0.35,-4.92 0,0 0.42,-0.51 0,0 1.23,-4.1 -1.89,-2.77 1.32,-1.79 -5.46,-10.1 0.96,-2.11 7.53,-2.85 0.67,-2.34 -3.07,-3.61 -0.48,-4.96 2.7,-0.69 -0.42,-7.69 -1.44,-3.33 -2.93,-1.21 -2.81,-8.19 0,0 10.51,-2.71 8.99,-7.85 13.07,-6.8 42.29,-10.2100002 20.95,-0.59 z"/><path d="m 277.65601,382.52195 11.66,-2.08 1.56,1.57 2.18,-3.72 1.98,-0.33 7.17,6.17 2.02,-0.58 2.06,3.24 1.73,-0.77 3.63,2.94 2.69,-1.64 -0.41,-2.73 3.89,-1.28 -0.52,2.22 2.43,2.97 2.4,-1.91 1.29,0.84 4.06,5.92 1.1,5.22 5.58,-1.98 4.86,2.51 0.37,3 4.57,-1.09 0,0 5.28,4.07 -0.22,1.44 -2.23,-0.94 -2.68,5.98 -2.89,-0.78 1.43,3.98 7.14,0.81 2.08,1.73 -1.73,1.11 0.16,2.24 4.13,0.63 -0.64,2.97 -3.27,0.17 -4.35,6.3 6.9,1.43 0.7,2.59 2.3,0.74 0,0 1.32,2.84 -4.39,0.14 -0.08,1.89 -2.84,1.39 -8.56,-0.53 -3.14,2.89 -3.98,0.73 -3.86,-1.09 -2.08,1.98 0.5,2.62 -2.51,-0.58 0,0 -0.32,0.1 0,0 2.47,1.87 -0.44,3 -7.6,0.39 -3.41,2.68 1.07,3.04 6.2,3.1 -0.68,2.13 -4.43,1.7 1.32,1.61 -1.53,2.17 -4.11,0.58 -1.06,2.8 -0.28,-1.89 0,0 -0.33,0 0,0 -2.33,5.28 1.19,0.87 -3.88,0.63 -3.47,5.84 0.23,3.31 -1.89,1.2 2.15,1.08 0,0 0.75,0 0,0 1.08,-0.04 0,0 0.65,0 0,0 2.23,-1.42 1.13,0.97 -2.21,7.79 7.39,-0.61 1.98,7.72 7.27,1.17 0.67,3.22 -4.61,4.34 5.96,2.43 -0.83,5.29 0,0 -5.94,4.16 -0.66,2.97 -6.03,0.41 -2.25,7.23 -2.31,1.75 0.37,2.24 -4.41,0.84 -2.9,-1.33 -2.38,2.02 -3.39,0.04 -0.48,-10.14 -8.29,-1.85 1.34,-2.49 -3.15,-11.9 -4,0.07 -2.01,-2.69 -5.1,-1.69 -3.35,-9.92 2.11,-3.17 -2.4,-1.77 0.42,-3.89 -5.1,1.64 -3.61,-3.22 -5.88,-1 1.14,1.34 -2.03,1.84 -2.55,-4.68 -3.82,-0.71 -0.49,-2.47 -3.22,1.49 -2.32,-1.15 -1.63,-4.66 -3.36,-2.07 0,0 2.38,-4.24 -0.66,-6.23 2.4,-0.59 0.56,1.37 0.66,-1.4 7.82,-1.35 0,0 -0.38,0.03 0,0 -0.42,-1.78 7.12,-4.12 4.52,0.98 -0.29,-2.33 -1.73,-0.27 0.74,-4.62 -2.93,-3.13 2.21,-3.08 -1.82,-2.87 1.46,-2.03 -0.52,-4.23 6.23,2.36 -2.85,-8.15 10.44,-0.47 -0.3,-5.28 -4.11,-1.78 -2.72,-7.49 5.64,-4.2 -4.31,-5.19 2.98,-0.74 0.74,-3.07 3.27,-2.59 1.33,-5.48 -1.76,-3.74 2.33,-1.66 -0.07,-2.92 2.43,-1.24 z"/><path d="m 385.27601,353.71195 5.43,0.84 -1.31,2.9 2.62,1.86 0.91,5.65 3.19,-0.98 5.65,4.89 -0.71,4.43 1.94,-2.18 8.5,4.46 0.07,-1.58 2.01,0.78 0.23,-3.47 3.16,2.51 2.28,-2.13 0.81,2.07 3.68,-1.22 1.48,-5.52 2.23,2.67 -1.75,3.16 4.45,2.44 -0.67,4.69 12.16,-0.44 1.9,4.32 4.93,2.72 3.14,-2.39 -0.3,-1.95 2.09,0.94 5.27,-1.57 -1.13,-1.08 3.88,-0.16 2,3.52 2.82,0.24 3.19,-2.84 0,0 2.16,21.93 1.59,2.93 0,0 -4.9,16.25 -1.91,-1.04 -5.09,4.19 -4.51,8.66 -9.16,2.47 -0.16,3.32 -8.13,3.3 -5.64,6.07 0,0 -0.5,0.36 0,0 -0.25,0.03 0,0 -1.98,2.37 -2.57,-2.35 -4.65,3.64 -10.05,1.02 -3.53,3.16 -2.82,-1.54 -6.83,7.39 -15.9,1.88 -0.28,-1.66 -2.2,-0.26 1.37,-2.56 -3.45,-3.27 1.57,-2.02 -4.23,-3.07 -0.18,-2.55 2.68,-1.19 -4.08,-6.48 -0.03,-3.39 -17.38,-4.79 -2.32,1.39 0,0 -2.3,-0.74 -0.7,-2.59 -6.9,-1.43 4.35,-6.3 3.27,-0.17 0.64,-2.97 -4.13,-0.63 -0.16,-2.24 1.73,-1.11 -2.08,-1.73 -7.14,-0.81 -1.43,-3.98 2.89,0.78 2.68,-5.98 2.23,0.94 0.22,-1.44 -5.28,-4.07 0,0 2.44,-3.36 0,0 -0.08,-0.24 0,0 1.04,-0.12 0,0 0.47,-0.35 0,0 1.03,-1.08 0,0 0.09,0.01 0,0 0.85,-1.4 0,0 0,-0.97 0,0 -0.88,-4.34 2.9,-7.07 5.25,6.14 4.2,2.17 1.79,-9.23 -4.67,-1.46 -0.1,-6.09 2.52,-2.32 -1.31,-3.06 2.87,-1.24 6.12,2.44 1.59,-1.72 3.7,0.35 1.44,-0.99 -1.37,-4 1.09,-0.34 2.68,1.75 1.72,-1.63 2.38,2.01 1.37,-3.19 -1.29,-3.99 2.62,-0.97 z"/><path d="m 349.88601,42.341946 47.77,7.46 49.85,5.19 81.86,-5.18 0,0 1.14,2.27 -1.89,5.24 -4.61,1.76 -3.66,-0.79 -0.96,1.98 -6.48,2.02 -2.64,4.37 4.66,5.92 2.75,-0.49 2.6,4.98 -1.47,4.4 3.4,2.14 6.94,11.58 0.73,5.080004 -3.87,4.52 -0.91,5.51 -3.69,2.88 0,0 -0.77,0.4 0,0 -1.06,-0.7 -1.3,3.89 -1.36,-1.73 -4.3,3.75 -3.24,0.17 0.56,3.3 -2.94,-1.81 -3.92,2.63 -20.1,16.22 -2.32,-2.41 -4.03,1.33 -3.84,5.19 -10.62,-3.56 -4.77,1.29 0,0 -0.72,-0.04 0,0 -8.99,1.55 -0.3,2.38 -5.13,2.12 -5.34,-1.04 -13.48,9.88 -3.43,-2.92 -3.81,0.35 -1.62,1.3 0.99,2.79 -3.18,-0.23 -1.32,3.05 -8.07,-2.02 -3.76,6.22 -6.32,2.68 -5.94,-2.12 -4.84,3.75 0.66,4.69 -4.34,2.57 -8.52,-1.78 -2.19,1.07 -2.42,-2.23 -7.24,1.96 -4.17,-2.77 0.55,-3.45 0,0 -0.28,-0.55 0,0 -5.11,3.02 0.66,3.99 -5.17,-0.78 0,0 -1.48,-5.21 0,0 0.32,0 0,0 -0.09,-2.4 -3.16,-0.74 -0.29,-2.41 2.77,-1.38 -2.7,-7.66 -9.13,0.77 -1.43,-3.71 -3.93,0.77 0.16,-1.82 -3.84,-3.26 -4.3,0.39 -0.83,2.1 -1.9,-1.37 -4.19,-10.88 -0.28,-5.8 -3.42,-1.53 0,0 -0.44,-2.93 2.92,-3.39 2.29,-0.15 0.16,-5.17 4.71,-5.04 0.99,-6.61 2.2,-1.21 5.66,1.47 2.14,3.2 1.07,-2.95 -1.26,-1.07 4.04,-7.100004 0,0 0,-0.33 0,0 2.98,-7.53 -11.07,2.41 -1.48,-3.18 1.62,-3.07 -5.31,-2.75 -1.94,0.94 -1.15,-1.84 1.14,-1.74 -4.45,-2.03 3.06,-8.78 -1.31,-2.2 4.4,-3.63 -3.7,-6.58 0,0 6.94,1.03 1.72,-1.96 -2.69,6.09 1.05,0.57 1.24,-4.55 6.02,-5.97 10.69,-3.72 4.69,-7.99 z"/><path d="m 169.47601,122.95195 3.43,11.61 3.12,-0.59 -0.02,3.3 3.2,-0.02 2.63,-2.55 4.06,1.63 3.49,-0.7 0,0 1.32,-0.06 0,0 3.84,0.57 1.78,2.67 0,0 0.24,0.09 0,0 3.31,1.18 0,0 -8.84,11.43 1.19,3.46 0.9,-1.44 3.49,1.17 6.04,8.07 -1.48,4.09 -5.51,1.26 1.64,1.48 -0.64,4.69 3.22,1.31 -2.39,1.2 0.65,3.96 -2.35,1.44 0.44,5.92 0,0 -0.3,0.06 0,0 -1.48,2.16 0.9,2.18 4.81,-0.91 7.48,5.57 -0.9,14.06 -5.78,0.32 -0.33,2.92 5.05,2.8 -0.96,4.72 3.18,0.86 3.4,-3.25 3.23,-0.43 -0.09,5.63 3.14,0.43 -0.17,4.76 5.16,-5.62 0.41,2.3 1.38,-2.32 2.78,2.16 2.3,-0.55 2.85,5.62 1.19,-1.01 1.97,2.95 1.32,-1.09 -0.48,3.47 6.57,-0.94 -0.19,3.36 6.33,1.47 0.49,2.18 3.45,0.19 6.52,-6.11 1.24,7.26 4.62,-0.62 1.61,-2.8 2.02,0.55 2.27,3.59 1.99,-0.55 3.43,1.75 0.5,2.83 1.61,-0.63 -0.22,2.84 2.19,0.22 2.37,6.42 9.64,-3.32 0.58,-3.36 3.27,2.46 -0.38,1.91 4.71,2.34 0,0 -0.99,6.05 4.26,0.55 0.29,2.44 -2.03,1.37 1.06,2.12 -5.84,-1.63 -3.96,1.58 -1.21,5.72 2.17,2 -1.01,3.89 -5.27,0.13 -0.87,2.7 -5.19,-1.77 -1.92,1.18 0.82,9.57 4.06,3.75 -5.68,6.71 -0.56,3.98 -5.7,-2.14 -4.83,1.17 -0.76,-2.23 -1.84,0.61 -0.19,3.06 -1.91,-0.46 0.29,2.15 -1.89,1.29 1.16,2.54 -1.63,1.67 0.43,4 -3.53,4.5 1.71,0.74 -2.03,4.95 1.76,0.68 -1.25,6.02 1.46,5.68 -3.35,5.51 -5.41,-3.16 -2.8,0.79 1.44,1.97 -0.77,2.92 -3.43,0.38 -1.08,2.78 -2.76,0.51 1.86,8.75 4.28,-0.57 -1.47,9.43 0,0 -16.72,6.84 -3.97,-1.51 1.85,-5.38 -3.1,-1.56 0,0 -3.25,-5.27 0.2,-8.44 -2.22,-1.2 1.79,-6.74 -11.94,1.04 -2.18,-9.91 4.13,-3.22 -1.44,-3.67 0,0 0,-0.8 0,0 -5.35,-4.14 -10.41,-1.97 -5.02,1.64 -0.68,6.08 -5.91,-0.79 -2.64,0.87 -0.27,2.03 -5.92,0.05 -10.1,-5.38 -1.9,-4.56 -7.83,-1.25 1.49,-4.67 -2.2,-4.22 -4.86,-3.32 -7.73,-0.08 0,0 -2.21,-6.55 -5.46,-4.6 -3,-0.8 -2.75,3.51 -2.39,-2.16 -3.68,-0.2 2.21,-3.12 -0.88,-6.68 -6.41,1.85 -3.65,-4.84 1.83,-2.56 -0.53,-2.27 -2.25,-1.04 -1.28,1.71 -4.27,-4.48 1.85,-3.41 -1.53,-11.54 2.96,-12.84 -5.55,-4.78 0.78,-1.75 1.39,2.71 3.1,-1.99 -1.03,-4.35 -3.21,-3.2 1.43,-2.48 -4.27,-6.14 2.25,-6.75 -1.16,-3.4 8.67,-2.02 -0.64,-7.19 -2.6,-1.13 0.82,-2.47 4.27,-2.06 -0.79,-10.74 0,0 -0.17,-0.12 0,0 -0.47,-3.08 0,0 0,-0.34 0,0 0.6,-4.16 0,0 9.45,3.39 9.03,-4.33 3.05,0.79 -0.73,-1.03 3.57,-3.48 -1.1,-3.93 2.74,-1.03 1.18,-4.38 1.29,1.49 2.5,-2.79 2.56,0.78 1.11,-4.71 1.7,0.48 0.12,-1.65 4.77,2.08 -0.58,-5.45 4.91,-4.04 -4.53,-4.27 -4.64,-1.27 -3.19,-3.02 -1.84,0.59 -1.67,-8.49 0.44,-1.14 2.23,1.68 9.63,-1.61 4.42,-3.61 1.89,-10.32 4.31,-2.2 1.17,1.85 z"/><path d="m 11.786011,102.23195 4.79,0.56 -2.98,2.15 0.02,2.41 -3.55,-5.1 1.72,-0.02 z m 5.9,-0.18 0.57,1.34 -2.05,0.97 1.48,-2.31 z m -4.63,-1.01 1.72,1.45 -2.8,-0.02 1.08,-1.43 z m 2.18,-1.260004 -0.09,2.460004 -1.22,-1.71 1.31,-0.750004 z m -7.1799998,-4.24 1.81,-0.17 -2,2.57 5.5999998,9.490004 -7.6199998,-6.1 0.09,-3.460004 -1.78,-1.3 3.9,-1.03 z m 30.9699998,-4.48 -0.04,1.47 -3.22,0.32 0.43,-3.07 2.83,1.28 z m 0.62,-5.52 -4.4,2.66 0.06,5.87 -3.74,4.45 -2.78,9.590004 -1.28,-5.2 -8.61,-1.35 0.56,-4.000004 -0.68,1.87 -2.52,-0.83 -5.74,3.470004 0.82,-1.22 -2.8499998,-2.590004 1.7299998,-2.6 6.88,0.43 6.12,-4.69 16.43,-5.86 z m 119.649999,-57.14 2.81,8.19 2.93,1.21 1.44,3.33 0.42,7.69 -2.7,0.69 0.48,4.96 3.07,3.61 -0.67,2.34 -7.53,2.85 -0.96,2.11 5.46,10.1 -1.32,1.79 1.89,2.77 -1.23,4.1 0,0 -0.42,0.51 0,0 0.35,4.92 0,0 0.71,-0.06 0,0 0.76,-2.57 1.54,0.81 2.04,2.34 0.13,3.64 6.46,3.65 -0.81,3.420004 -4.65,-0.73 -1.34,1.29 -0.03,3.76 4.44,3.3 -5.27,5.36 2.17,9.18 0,0 -3.08,3.27 -1.17,-1.85 -4.3,2.2 -1.9,10.33 -4.41,3.6 -9.63,1.62 -2.23,-1.69 -0.45,1.15 1.68,8.48 1.84,-0.58 3.19,3.01 4.64,1.28 4.52,4.26 -4.91,4.04 0.59,5.45 -4.77,-2.09 -0.12,1.65 -1.7,-0.48 -1.12,4.71 -2.55,-0.77 -2.5,2.78 -1.29,-1.49 -1.18,4.39 -2.73,1.03 1.1,3.94 -3.58,3.48 0.74,1.03 -3.06,-0.79 -9.03,4.32 -9.45,-3.38 0,0 1.5,-6.34 -8.12,-1.94 0.43,2.35 -3.09,1.37 0.54,1.97 -2.52,0.51 1.68,2.15 -3.249999,1.32 0.989999,2.08 -2.289999,1.29 -2.41,-1.22 -2.64,2.23 -5.7,-3.19 -8.18,2.82 -3.33,3.79 -4.55,-1.01 2.15,6.48 -14.94,6.38 -2.21,-2.53 -2.56,1.8 -5.28,-4.38 -2.04,2.75 2.05,1.91 -3.88,1.21 0.78,3.01 -3.97,3.2 -3.25,11.53 -2.26,1.44 -4.71,-2.56 -2.09,1.77 0.07,3.59 0,0 -8.33,-5.51 -6.87,-8.95 -8.1299998,-6.62 -5.84999998,-2.23 2.30999998,-4.67 -1,-7.74 12.1999998,-9.21 2.6,-9 -0.63,-5.94 4.31,-6.45 -2.39,-4.63 -3.31,-18.78 -2.83,-5.34 0.58,-7.55 -2,-1.76 -1.0999998,-6.51 2.5899998,-0.63 -1.39,-4.04 2.84,0.9 4.64,5.65 5.85,1.22 5.74,7.4 1.33,-6.18 -2.96,-0.14 -1.95,-4.79 1.67,-6.2 3.01,-0.49 -0.56,-5.58 2.74,-7.540004 4.41,-4.58 2.15,1.58 0.27,-4.75 1.42,-0.4 -1.34,-2.03 2.44,-3.69 -4.76,0.78 34.65,-12.91 12.57,-2.06 21.299999,-7.6 15.15,-3.38 10.18,-8.13 15.9,-19.6 12.32,-3.16 z"/></svg>
+      </div>
+    </div>
+  </div>
+  <div class="strip-wrap">
+    <div class="strip" id="strip" tabindex="0" aria-label="Przykłady zrealizowanych finansowań"></div>
+    <div class="arrows"><button class="arr" id="prev" type="button" aria-label="Poprzednie">&#8592;</button><button class="arr" id="next" type="button" aria-label="Następne">&#8594;</button></div>
+  </div>
+</section>
+
+<section class="sec" id="jak">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Jak działamy</h2>
+      <p>Każde finansowanie zaczynamy od rozmowy i analizy dokumentów. Wniosek składamy dopiero wtedy, gdy wiadomo, które rozwiązanie ma sens w Twojej sytuacji.</p>
+    </div>
+    <ol class="steps">
+      <li class="step"><img src="img/step-1.webp" width="343" height="132" loading="lazy" alt="Rozmowa z doradcą"><div class="step-n">Rozmowa</div><p>Szczegółowa rozmowa, podczas której pytamy o potrzeby klienta.</p></li>
+      <li class="step"><img src="img/step-2.webp" width="343" height="132" loading="lazy" alt="Analiza dokumentów"><div class="step-n">Analiza dokumentów</div><p>Analizujemy dokumenty finansowe - każdy klient ma inne potrzeby.</p></li>
+      <li class="step"><img src="img/step-3.webp" width="343" height="132" loading="lazy" alt="Omówienie propozycji"><div class="step-n">Propozycja</div><p>Przedstawiamy najkorzystniejsze możliwe rozwiązania, dopasowane do branży i inwestycji, którą klient chce zrealizować.</p></li>
+      <li class="step"><img src="img/step-4.webp" width="343" height="132" loading="lazy" alt="Wypełniony wniosek"><div class="step-n">Wniosek</div><p>Uzupełniamy wnioski o finansowanie.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec gray" id="opinie">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Co mówią nasi klienci</h2>
+      <p>Opinie firm i klientów indywidualnych, którym pomogliśmy uzyskać finansowanie.</p>
+    </div>
+    <ul class="ops">
+      <li class="op"><blockquote>Polecamy, refinansowali nam zobowiązanie z oprocentowania 10,99% na 5,06% kredyt inwestycyjny. Proces jasny i szybki.</blockquote><cite>Elżbieta Telfaz<small>Klient</small></cite></li>
+      <li class="op"><blockquote>Pomogli uwolnić środki w leasingu zwrotnym na 14,5 mln pod maszyny rolnicze. Polecam!</blockquote><cite>Agromar sp. z o.o.<small>Klient</small></cite></li>
+      <li class="op"><blockquote>Bardzo szybki kontakt i rzetelna, konkretna obsługa. Pani Wiktoria wyjaśniła mi dokładnie cały proces, a po wysłanych dokumentach znalazła odpowiednie rozwiązanie dla mojej firmy.</blockquote><cite>Trans-Jan<small>Klient</small></cite></li>
+      <li class="op"><blockquote>Rozwiązanie finansowe, które dla mnie znaleźli, pozwoliło mi zapłacić VAT w US. Zabezpieczenie na nieruchomości w formie limitu faktoringowego, bez sprawdzania baz.</blockquote><cite>Notica Investment Sp. z o.o.<small>Klient</small></cite></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec" id="o-nas">
+  <div class="wrap about">
+    <div class="about-lead">
+      <h2>Ogólnopolskie pośrednictwo finansowe</h2>
+      <p style="margin-top:22px">Jesteśmy ogólnopolską firmą specjalizującą się w pozyskiwaniu finansowania bankowego i pozabankowego. Naszą misją jest szybkie i skuteczne dopasowanie oferty do potrzeb każdego klienta - także w trudnych sytuacjach kredytowych.</p>
+      <p>Współpracujemy z bankami, funduszami inwestycyjnymi i inwestorami prywatnymi, dzięki czemu klient nie musi sam porównywać dziesiątek ofert.</p>
+    </div>
+    <div class="feats">
+      <div class="feat"><h3>Szerokie portfolio</h3><p>Kredyty, pożyczki i leasingi z sektora bankowego i pozabankowego, dobierane do konkretnej sytuacji finansowej.</p></div>
+      <div class="feat"><h3>Indywidualne podejście</h3><p>Znajomość rynku pozwala szybko zamienić potrzeby klienta w konkretne rozwiązanie.</p></div>
+      <div class="feat"><h3>Wsparcie w trudnych sytuacjach</h3><p>Obsługujemy klientów z niestandardowymi potrzebami i trudną historią kredytową - od analizy zdolności po negocjacje.</p></div>
+      <div class="feat"><h3>Bezpieczeństwo i poufność</h3><p>Wszystkie informacje przetwarzamy poufnie. Współpracujemy z renomowanymi instytucjami finansowymi i firmami pożyczkowymi.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec gray" id="kontakt">
+  <div class="wrap contact">
+    <div>
+      <h2>Skontaktuj się z nami</h2>
+      <p style="margin-top:20px;font-size:1.1rem">Chcesz dowiedzieć się, jakie finansowanie będzie najlepsze w Twojej sytuacji? Zostaw kontakt - oddzwonimy i przedstawimy konkretną propozycję.</p>
+      <ul class="c-list">
+        <li><small>Infolinia</small><a href="tel:+48665419413">665 419 413</a></li>
+        <li><small>E-mail</small><a href="mailto:kontakt@analitycy-kredytowi.pl">kontakt@analitycy-kredytowi.pl</a></li>
+        <li><small>Siedziba</small><span>ul. Jagiełły 2/5, 82-400 Sztum</span></li>
+      </ul>
+      <div class="mapbox" id="mapbox"><button type="button" id="mapBtn">Pokaż siedzibę na Mapach Google</button></div>
+    </div>
+    <form class="form" id="form" novalidate>
+      <h3>Zapytanie o finansowanie</h3>
+      <div class="f"><label for="f-n">Imię i nazwisko</label><input id="f-n" name="n" autocomplete="name"></div>
+      <div class="f"><label for="f-nip">NIP (dla firm)</label><input id="f-nip" name="nip" inputmode="numeric"></div>
+      <div class="f"><label for="f-t">Telefon</label><input id="f-t" name="t" type="tel" autocomplete="tel"></div>
+      <div class="f"><label for="f-e">E-mail</label><input id="f-e" name="e" type="email" autocomplete="email"></div>
+      <div class="f full"><label for="f-u">Usługa</label>
+        <select id="f-u" name="u">
+          <option value="">Wybierz interesującą Cię usługę</option>
+          <option>Kredyty firmowe</option><option>Faktoring i faktoring zakupowy</option><option>Leasing zwrotny nieruchomości</option><option>Leasing bez BIK</option><option>Pożyczki Agro</option><option>Odkupimy nieopłaconą fakturę</option><option>Kredyty hipoteczne</option><option>Pożyczki hipoteczne</option><option>Kredyty gotówkowe</option><option>Pożyczka pozabankowa</option><option>Oddłużanie z chwilówek</option>
+        </select></div>
+      <div class="f full"><label for="f-m">Wiadomość</label><textarea id="f-m" name="m" placeholder="Np. kwota, cel finansowania, czy były odmowy w bankach"></textarea></div>
+      <label class="consent"><input type="checkbox" name="zg">Wyrażam zgodę na kontakt w sprawie zapytania. Administratorem danych jest właściciel serwisu - szczegóły w polityce prywatności.</label>
+      <button class="btn btn-navy" type="submit">Wyślij zapytanie <span class="ar" aria-hidden="true"></span></button>
+      <p class="form-ok" id="formOk" hidden>Dziękujemy. W podglądzie formularz nie wysyła wiadomości - zacznie działać na docelowej stronie.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-grid">
+      <div>
+        <a class="logo" href="#top" aria-label="Analitycy Kredytowi"><svg class="logo-svg" viewBox="0 0 169.158 84.029" role="img" aria-label="Analitycy Kredytowi" fill="currentColor"><g transform="translate(-232.293 -186.079)"><g transform="translate(274.454 186.079)"><g transform="translate(0 0)"><path d="M200.562,269.37l-5.368,13.512H188.3l17.624-42.965H213.9l17.624,42.965H224.4l-5.521-13.512Zm17.01-4.337-5.131-12.369c-1.15-2.8-1.917-5.353-2.684-7.84H209.6c-.767,2.488-1.534,5.167-2.607,7.776l-5.055,12.433Z" transform="translate(-188.3 -239.917)" /></g></g><g transform="translate(57.993 94.859)"><path d="M177.13,172.762l-1.239,2.223H174.3l4.068-7.067h1.841l4.068,7.067h-1.644l-1.274-2.223Zm3.926-.713-1.184-2.035a11.866,11.866,0,0,1-.619-1.29h-.035a12,12,0,0,1-.6,1.279l-1.167,2.045Z" transform="translate(0 0.069)" /><path d="M182.255,174.984v-7.067h1.7l3.8,3.575a19.829,19.829,0,0,1,2.122,2.3l.053-.01a18.7,18.7,0,0,1-.177-2.9v-2.957h1.451v7.067H189.65l-3.786-3.587a20.925,20.925,0,0,1-2.211-2.359l-.053.01a28.6,28.6,0,0,1,.106,2.915v3.02Z" transform="translate(3.777 0.069)" /><path d="M192.369,172.762l-1.237,2.223H189.54l4.068-7.067h1.839l4.069,7.067H197.87l-1.273-2.223Zm3.927-.713-1.186-2.035a12.117,12.117,0,0,1-.618-1.29h-.035a12,12,0,0,1-.6,1.279l-1.168,2.045Z" transform="translate(7.236 0.069)" /><path d="M197.483,167.917h1.557v6.3h5.094v.765h-6.651Z" transform="translate(9.826 0.069)" /><path d="M204.7,167.917v7.067h-1.557v-7.067Z" transform="translate(12.27 0.069)" /><path d="M208.729,168.693H205.1v-.776h8.825v.776h-3.643v6.292h-1.557Z" transform="translate(13.036 0.069)" /><path d="M215.344,174.984v-3l-3.784-4.068h1.768l1.68,1.95c.442.535.814.964,1.186,1.458h.035a18.811,18.811,0,0,1,1.2-1.458l1.717-1.95h1.733l-3.979,4.058v3.01Z" transform="translate(15.763 0.069)" /><path d="M226.928,174.9a11.98,11.98,0,0,1-3.149.343c-3.361,0-5.873-1.286-5.873-3.664,0-2.271,2.531-3.792,6.227-3.792a10.117,10.117,0,0,1,2.83.322l-.389.76a8.567,8.567,0,0,0-2.388-.3c-2.795,0-4.652,1.083-4.652,2.978,0,1.779,1.68,2.9,4.563,2.9a9.8,9.8,0,0,0,2.529-.3Z" transform="translate(18.451 0.006)" /><path d="M228.4,174.984v-3l-3.786-4.068h1.768l1.681,1.95c.442.535.813.964,1.184,1.458h.035c.319-.461.743-.922,1.2-1.458l1.715-1.95h1.734l-3.98,4.058v3.01Z" transform="translate(21.285 0.069)" /><path d="M234.418,167.917h1.54v3.407h.053c.319-.273.637-.524.936-.755l3.644-2.653h1.91l-4.315,3,4.652,4.068h-1.821l-3.91-3.471-1.149.776v2.7h-1.54Z" transform="translate(25.449 0.069)" /><path d="M240.922,168c.779-.084,1.911-.148,2.954-.148a7.449,7.449,0,0,1,3.45.58,1.581,1.581,0,0,1,.936,1.36c0,.928-.99,1.549-2.228,1.8v.032a2.212,2.212,0,0,1,1.733,1.433,8.34,8.34,0,0,0,.92,1.95H247.1a6.427,6.427,0,0,1-.779-1.7c-.354-.98-1.009-1.349-2.405-1.381h-1.45v3.078h-1.54Zm1.54,3.237h1.574c1.644,0,2.689-.538,2.689-1.35,0-.917-1.113-1.317-2.742-1.317a11.192,11.192,0,0,0-1.521.074Z" transform="translate(28.216 0.04)" /><path d="M253.54,171.671h-4.616v2.549h5.165v.765h-6.722v-7.067h6.457v.765h-4.9v2.234h4.616Z" transform="translate(30.969 0.069)" /><path d="M253.282,168.015a32.683,32.683,0,0,1,3.273-.159,10.258,10.258,0,0,1,4.829.891,2.82,2.82,0,0,1,1.7,2.566,3.182,3.182,0,0,1-1.715,2.779,10.92,10.92,0,0,1-5.289,1.028c-1.115,0-2.016-.032-2.795-.085Zm1.54,6.32c.388.031.954.042,1.556.042,3.308,0,5.076-1.1,5.076-3.032.018-1.685-1.574-2.757-4.828-2.757a14.42,14.42,0,0,0-1.8.1Z" transform="translate(33.401 0.04)" /><path d="M263.956,174.984v-3l-3.786-4.068h1.77l1.68,1.95c.442.535.814.964,1.184,1.458h.035c.319-.461.743-.922,1.2-1.458l1.715-1.95h1.734l-3.981,4.058v3.01Z" transform="translate(36.327 0.069)" /><path d="M270.541,168.693h-3.627v-.776h8.827v.776H272.1v6.292h-1.556Z" transform="translate(39.194 0.069)" /><path d="M283.894,171.44c0,2.478-2.494,3.808-5.536,3.808-3.166,0-5.359-1.491-5.359-3.679,0-2.295,2.335-3.8,5.519-3.8C281.789,167.772,283.894,169.284,283.894,171.44Zm-9.268.107c0,1.555,1.379,2.938,3.82,2.938s3.821-1.362,3.821-3c0-1.448-1.239-2.949-3.8-2.949S274.626,169.971,274.626,171.548Z" transform="translate(41.048)" /><path d="M284.039,174.984l-3.025-7.067h1.627l1.416,3.575c.353.881.672,1.762.883,2.444h.035a19.5,19.5,0,0,1,.973-2.454l1.591-3.565h1.61l1.45,3.586a18.226,18.226,0,0,1,.832,2.423h.035c.248-.776.584-1.563.956-2.444L294,167.917h1.574l-3.377,7.067h-1.61l-1.5-3.68A14.007,14.007,0,0,1,288.3,169h-.035a13.556,13.556,0,0,1-.919,2.307l-1.7,3.68Z" transform="translate(44.854 0.069)" /><path d="M293.442,167.917v7.067h-1.556v-7.067Z" transform="translate(50.017 0.069)" /></g></g><g transform="translate(-220 -66.332)"><path d="M234.418,167.917h6.351V193.21h-6.351Z" transform="translate(80.01 -80.266)" /><path d="M244.851,183.831l15.032-15.914h7.878l-17.8,17.991,19.187,24.406h-7.513l-16.127-20.824Z" transform="translate(80.01 -88.818)" /></g></svg></a>
+        <p style="margin:18px 0 0;max-width:30em">Ogólnopolska firma specjalizująca się w pozyskiwaniu finansowania bankowego i pozabankowego dla firm i klientów indywidualnych.</p>
+      </div>
+      <div>
+        <h4>Dla firm</h4>
+        <ul><li><a href="#oferta">Kredyty firmowe</a></li><li><a href="#oferta">Faktoring</a></li><li><a href="#oferta">Leasing zwrotny</a></li><li><a href="#oferta">Leasing bez BIK</a></li><li><a href="#oferta">Pożyczka Agro</a></li></ul>
+      </div>
+      <div>
+        <h4>Dla klientów indywidualnych</h4>
+        <ul><li><a href="#oferta">Kredyty hipoteczne</a></li><li><a href="#oferta">Pożyczki hipoteczne</a></li><li><a href="#oferta">Kredyty gotówkowe</a></li><li><a href="#oferta">Oddłużanie z chwilówek</a></li></ul>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul><li><a href="tel:+48665419413">665 419 413</a></li><li><a href="mailto:kontakt@analitycy-kredytowi.pl">kontakt@analitycy-kredytowi.pl</a></li><li>ul. Jagiełły 2/5<br>82-400 Sztum</li></ul>
+      </div>
+    </div>
+    <div class="ftr-low">
+      <span>© <span id="yr">2026</span> Analitycy Kredytowi · <a href="#top">Polityka prywatności</a> · <a href="#top">Regulamin</a></span>
+      <a class="wylinka-badge" href="https://wylinka.pl/?utm_source=analitycy-kredytowi.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
+    </div>
+  </div>
+</footer>
+
+<div class="mbar" id="mbar"><a href="tel:+48665419413">Zadzwoń</a><a href="#kontakt">Zapytaj o finansowanie</a></div>
+
+<script>
+(function(){
+var d=document,$=function(s){return d.querySelector(s)};
+d.getElementById('yr').textContent=new Date().getFullYear();
+/* wysokosc panelu hero do skosu */
+var hb=$('#heroBox');function bh(){hb.style.setProperty('--bh',hb.offsetHeight+'px')}bh();addEventListener('resize',bh);
+/* naglowek, menu */
+var hdr=$('.hdr'),bur=$('.burger'),mbar=$('#mbar'),hero=$('.hero');
+function sc(){var y=scrollY;hdr.classList.toggle('sc',y>8);mbar.classList.toggle('show',y>hero.offsetHeight*.7)}
+addEventListener('scroll',sc,{passive:true});sc();
+bur.addEventListener('click',function(){var o=d.body.classList.toggle('menu-open');bur.setAttribute('aria-expanded',o)});
+d.querySelectorAll('.nav a').forEach(function(a){a.addEventListener('click',function(){d.body.classList.remove('menu-open');bur.setAttribute('aria-expanded','false')})});
+var secs=['oferta','realizacje','jak','opinie','o-nas','kontakt'].map(function(i){return d.getElementById(i)});
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){d.querySelectorAll('.nav a').forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-45% 0px -50% 0px'});secs.forEach(function(s){io.observe(s)})}
+/* kafle oferty -> formularz */
+d.querySelectorAll('[data-u]').forEach(function(a){a.addEventListener('click',function(){var v=a.getAttribute('data-u');if(v)$('#f-u').value=v})});
+/* realizacje */
+var C=[
+["120 mln zł","Finansowanie deweloperskie","Realizacja deweloperska.","Warszawa",71,42],
+["43 mln zł","Nieruchomość komercyjna","Sfinansowanie nieruchomości komercyjnej.","Warszawa",65,43],
+["42 mln zł","Kredyt inwestycyjny","Zakup nieruchomości pod wynajem.","Toruń",42,30],
+["36 mln zł","Finansowanie deweloperskie","Realizacja deweloperska.","Poznań",25,40],
+["17,5 mln zł","Kredyt korporacyjny","Zakup biurowca.","Elbląg",56,14],
+["15,5 mln zł","Limit kredytowy","Limit dla spółki handlującej węglem.","Szczecin",8,25],
+["11 mln zł","Pożyczka hipoteczna","Zakup hotelu, oprocentowanie 5,1%.","Władysławowo",38,5],
+["11 mln zł","Refinansowanie","Limit w koncie: z oprocentowania 7,1% na 5,2%.","Pruszków",64,49],
+["10 mln zł","Refinansowanie","Kredyt z oprocentowaniem 10,9% zamieniony na kredyt 5,09%.","Tomaszów Mazowiecki",55,58],
+["11 mln zł","Leasing zwrotny","Leasing zwrotny dla firmy produkcyjnej.","Kargowa, woj. lubuskie",11,49],
+["8,9 mln zł","Leasing zwrotny","Leasing zwrotny linii produkcyjnej.","Kargowa, woj. lubuskie",14,44],
+["7,8 mln zł","Leasing operacyjny","Dla przedsiębiorstwa rolnego.","Klępsk, woj. lubuskie",17,46],
+["5,3 mln zł","Finansowanie zakupu","Zakup centrum medycznego, oprocentowanie 5,6%.","Żukowo, woj. pomorskie",36,14],
+["3,2 mln zł","Leasing operacyjny","Kombajn ziemniaczany.","Klępsk, woj. lubuskie",16,39],
+["2,5 mln zł","Pożyczka hipoteczna","Rozwój firmy - sklep internetowy.","Rzeszów",75,80],
+["2,4 mln zł","Leasing zwrotny","Maszyna budowlana, klient ze złą historią kredytową.","Wrocław",23,65],
+["2 mln zł","Faktoring i pożyczka","Faktoring zakupowy 500 tys. zł i pożyczka 1,5 mln zł na płatności VAT.","Warszawa",68,40],
+["2 mln zł","Kredyt inwestycyjny","Produkcja pierogów.","Głogów",20,55],
+["2 mln zł","Faktoring zakupowy","Zabezpieczony hipoteką, branża meblarska.","Białystok",85,32],
+["1,5 mln zł","Faktoring zakupowy","Spłata zaległości VAT dewelopera.","Warszawa",68,46],
+["1,4 mln zł","Pożyczka pod nieruchomość","Dla klienta z wpisami w BIK i KRD.","Konstancin-Jeziorna",72,49],
+["1,3 mln zł","Leasing","Wyposażenie sali zabaw.","Kórnik",32,47],
+["1 mln euro","Kredyt obrotowy","Dla firmy transportowej.","Sochaczew",60,44]];
+var strip=$('#strip'),map=$('#map'),pins=[],cards=[];
+C.forEach(function(c,i){
+  var el=d.createElement('article');el.className='case';el.innerHTML='<div class="amt">'+c[0]+'</div><h3>'+c[1]+'</h3><p>'+c[2]+'</p><div class="pl">'+c[3]+'</div>';strip.appendChild(el);cards.push(el);
+  var p=d.createElement('button');p.type='button';p.className='pin';p.style.left=c[4]+'%';p.style.top=c[5]+'%';p.setAttribute('aria-label',c[0]+', '+c[1]+', '+c[3]);p.innerHTML='<span>'+c[0]+'</span>';map.appendChild(p);pins.push(p);
+  function on(v){el.classList.toggle('on',v);p.classList.toggle('on',v)}
+  el.addEventListener('mouseenter',function(){on(true)});el.addEventListener('mouseleave',function(){on(false)});
+  p.addEventListener('mouseenter',function(){on(true)});p.addEventListener('mouseleave',function(){on(false)});
+  p.addEventListener('click',function(){cards.forEach(function(x,j){x.classList.toggle('on',j===i)});pins.forEach(function(x,j){x.classList.toggle('on',j===i)});strip.scrollTo({left:el.offsetLeft-strip.offsetLeft,behavior:'smooth'})});
+});
+var prev=$('#prev'),next=$('#next');
+function step(){var c=cards[0];return c.offsetWidth+parseFloat(getComputedStyle(strip).columnGap||18)}
+function upd(){prev.disabled=strip.scrollLeft<4;next.disabled=strip.scrollLeft+strip.clientWidth>=strip.scrollWidth-4}
+prev.addEventListener('click',function(){strip.scrollBy({left:-step(),behavior:'smooth'})});
+next.addEventListener('click',function(){strip.scrollBy({left:step(),behavior:'smooth'})});
+strip.addEventListener('scroll',upd,{passive:true});addEventListener('resize',upd);upd();
+/* przeciaganie mysza */
+var dn=false,sx=0,sl=0,mv=0;
+strip.addEventListener('pointerdown',function(e){if(e.pointerType!=='mouse')return;dn=true;mv=0;sx=e.clientX;sl=strip.scrollLeft;strip.classList.add('drag')});
+addEventListener('pointermove',function(e){if(!dn)return;mv=Math.abs(e.clientX-sx);strip.scrollLeft=sl-(e.clientX-sx)});
+addEventListener('pointerup',function(){if(!dn)return;dn=false;strip.classList.remove('drag');var w=step(),t=Math.round(strip.scrollLeft/w)*w;strip.scrollTo({left:t,behavior:'smooth'})});
+strip.addEventListener('keydown',function(e){if(e.key==='ArrowRight'){next.click();e.preventDefault()}if(e.key==='ArrowLeft'){prev.click();e.preventDefault()}});
+/* mapa Google po kliknieciu */
+$('#mapBtn').addEventListener('click',function(){var f=d.createElement('iframe');f.src='https://www.google.com/maps?q='+encodeURIComponent('Jagiełły 2, 82-400 Sztum')+'&output=embed';f.title='Siedziba na mapie';f.loading='lazy';f.referrerPolicy='no-referrer-when-downgrade';$('#mapbox').innerHTML='';$('#mapbox').appendChild(f)});
+/* formularz pokazowy */
+$('#form').addEventListener('submit',function(e){e.preventDefault();$('#formOk').hidden=false});
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Pośrednictwo kredytowe dla firm i osób prywatnych | Analitycy Kredytowi (podgląd)</title>
+<meta name="description" content="Kredyty, pożyczki, leasing i faktoring dla firm i klientów indywidualnych. Finansowanie z banków, funduszy inwestycyjnych i od inwestorów prywatnych. Analitycy Kredytowi, Sztum - działamy w całej Polsce.">
+<meta name="theme-color" content="#1C4583">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/archivo-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" type="image/webp" href="img/hero-m-760.webp" media="(max-width: 819px)" imagesrcset="img/hero-m-480.webp 480w, img/hero-m-760.webp 760w, img/hero-m-1000.webp 1000w" imagesizes="100vw">
+<link rel="preload" as="image" type="image/webp" href="img/hero-1600.webp" media="(min-width: 820px)" imagesrcset="img/hero-1024.webp 1024w, img/hero-1600.webp 1600w, img/hero-1920.webp 1920w" imagesizes="100vw">
+<style>
+@font-face{font-family:"Archivo";font-style:normal;font-weight:400 800;font-display:swap;src:url(fonts/archivo-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00D7,U+00F3,U+2013,U+2018-2019,U+201C-201E,U+2026}
+@font-face{font-family:"Archivo";font-style:normal;font-weight:400 800;font-display:swap;src:url(fonts/archivo-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+:root{
+  --navy:#1C4583;      /* kolor logo */
+  --navy-d:#0F2C5C;    /* ciemna sekcja */
+  --blue:#2B6BE0;      /* jasniejsza odmiana granatu z logo - linie, wyroznienia */
+  --ink:#121C2E;
+  --text:#2C3646;
+  --mute:#5A6577;
+  --gray:#EEF1F5;
+  --line:#D5DBE4;
+  --k:.41;             /* nachylenie kreski litery A z logo (ok. 22 st.) */
+  --cw:min(92vw,1720px);
+  --pad:clamp(16px,4vw,64px);
+  --hdr:76px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:#fff;color:var(--text);font:400 17px/1.6 "Archivo",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{color:var(--ink);font-weight:700;line-height:1.12;letter-spacing:-.015em;margin:0}
+h2{font-size:clamp(1.9rem,1.2rem + 2.2vw,3.1rem)}
+h3{font-size:1.18rem;line-height:1.25}
+p{margin:0 0 1em}
+.wrap{width:var(--cw);margin-inline:auto}
+section{scroll-margin-top:var(--hdr)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+/* przycisk: prawa krawedz scieta pod katem kreski A */
+.btn{--c:16px;display:inline-flex;align-items:center;gap:.6em;min-height:54px;padding:0 calc(28px + var(--c)) 0 28px;font:700 1.02rem/1 inherit;font-family:inherit;text-decoration:none;border:0;cursor:pointer;clip-path:polygon(0 0,100% 0,calc(100% - var(--c)) 100%,0 100%);transition:background-color .2s,color .2s,transform .2s}
+.btn-white{background:#fff;color:var(--navy)}
+.btn-white:hover{background:#E4ECFA}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{background:var(--navy-d)}
+.btn:active{transform:translateY(1px)}
+.btn .ar{display:inline-block;width:18px;height:2px;background:currentColor;position:relative;transform:skewX(-22deg)}
+.btn .ar::after{content:"";position:absolute;right:-1px;top:-4px;width:9px;height:9px;border:2px solid currentColor;border-width:2px 2px 0 0;transform:skewX(22deg) rotate(45deg)}
+
+/* ---------- naglowek ---------- */
+.hdr{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid transparent;transition:border-color .2s,box-shadow .2s}
+.hdr.sc{border-color:var(--line);box-shadow:0 6px 24px rgba(15,44,92,.06)}
+.hdr .wrap{height:var(--hdr);display:flex;align-items:center;gap:28px}
+.logo{display:block;color:var(--navy);flex:none}
+.logo-svg{display:block;height:60px;width:auto}
+.nav{display:flex;gap:clamp(18px,2vw,36px);margin-left:auto}
+.nav a{font-weight:600;font-size:1rem;text-decoration:none;color:var(--ink);padding:8px 0;position:relative}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:3px;background:var(--navy);transform:scaleX(0) skewX(-22deg);transform-origin:left;transition:transform .25s}
+.nav a:hover::after,.nav a.on::after{transform:scaleX(1) skewX(-22deg)}
+.hdr-tel{display:flex;flex-direction:column;align-items:flex-end;text-decoration:none;line-height:1.15;padding-left:28px;border-left:1px solid var(--line)}
+.hdr-tel small{font-size:.78rem;color:var(--mute)}
+.hdr-tel b{font-size:1.15rem;color:var(--navy);letter-spacing:.01em}
+.burger{display:none}
+
+/* ---------- pierwszy ekran ---------- */
+.hero{position:relative;--hh:clamp(600px,calc(100svh - var(--hdr)),940px);height:var(--hh);overflow:hidden;background:var(--gray)}
+.hero picture,.hero picture img{position:absolute;inset:0;width:100%;height:100%}
+.hero picture img{object-fit:cover;object-position:60% 30%}
+.hero-box{position:absolute;left:0;bottom:0;width:calc((100vw - var(--cw))/2 + min(56vw,960px));background:var(--navy);color:#fff;
+  --s:calc(var(--bh,470px) * var(--k));
+  clip-path:polygon(0 0,100% 0,calc(100% - var(--s)) 100%,0 100%);
+  padding:clamp(40px,5vh,64px) calc(var(--s) + 48px) clamp(40px,6vh,72px) calc((100vw - var(--cw))/2)}
+.hero-box h1{color:#fff;font-size:clamp(2.15rem,1.2rem + 2.3vw,3.65rem);font-weight:700;max-width:16.5em;line-height:1.08}
+.hero-box h1 span{display:block;font-weight:500;font-size:.6em;line-height:1.25;margin-top:.55em;color:#C9D8F4;letter-spacing:0}
+.hero-box p{font-size:clamp(1.02rem,.95rem + .3vw,1.2rem);max-width:33em;color:#E3EAF7;margin:22px 0 30px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:6px 22px;margin-top:26px;font-size:.95rem;color:#C9D8F4}
+.hero-meta a{color:#fff;font-weight:600;text-decoration:none}
+
+/* ---------- sekcje ---------- */
+.sec{padding:clamp(64px,8vw,120px) 0}
+.sec-head{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:24px clamp(32px,5vw,96px);align-items:end;margin-bottom:clamp(32px,4vw,56px)}
+.sec-head p{margin:0;color:var(--mute);font-size:1.08rem;max-width:38em}
+.gray{background:var(--gray)}
+
+/* oferta */
+.tiles{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:clamp(10px,1.1vw,18px);list-style:none;margin:0;padding:0}
+.tile a{display:block;position:relative;text-decoration:none;overflow:hidden;background:var(--navy);aspect-ratio:1/1.08}
+.tile img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease,opacity .3s}
+.tile a:hover img{transform:scale(1.05)}
+.tile .lab{position:absolute;left:0;bottom:0;max-width:calc(100% - 10px);background:var(--navy);color:#fff;font-weight:600;font-size:clamp(.92rem,.8rem + .3vw,1.06rem);line-height:1.22;padding:12px 30px 12px 16px;clip-path:polygon(0 0,100% 0,calc(100% - 14px) 100%,0 100%);transition:background-color .2s}
+.tile a:hover .lab{background:var(--blue)}
+.tile-cta a{background:var(--navy-d);color:#fff;display:flex;flex-direction:column;justify-content:space-between;padding:clamp(16px,1.6vw,26px)}
+.tile-cta b{font-size:clamp(1.05rem,.9rem + .45vw,1.35rem);line-height:1.22;font-weight:700}
+.tile-cta span{font-size:.95rem;color:#C9D8F4}
+.tile-cta i{font-style:normal;font-weight:700;display:inline-flex;align-items:center;gap:10px}
+.tile-cta a::before{content:"";position:absolute;right:-30px;top:0;bottom:0;width:60px;background:var(--navy);transform:skewX(-22deg);transition:right .3s}
+.tile-cta a:hover::before{right:-14px}
+.src-note{margin:clamp(28px,3vw,40px) 0 0;color:var(--mute);font-size:1rem}
+.src-note b{color:var(--ink)}
+
+/* trudne sytuacje */
+.hard{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:stretch;background:var(--gray)}
+.hard-img{position:relative;min-height:460px}
+.hard-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:40% 40%;clip-path:polygon(0 0,100% 0,calc(100% - 140px) 100%,0 100%)}
+.hard-txt{padding:clamp(56px,7vw,110px) calc((100vw - var(--cw))/2) clamp(56px,7vw,110px) clamp(24px,3vw,48px);max-width:calc(var(--cw)/2 + (100vw - var(--cw))/2)}
+.hard-txt h2{margin-bottom:18px}
+.hard-txt .q{font-size:1.2rem;font-weight:600;color:var(--navy);margin-bottom:14px}
+.ticks{list-style:none;margin:26px 0 0;padding:0;display:grid;gap:14px}
+.ticks li{position:relative;padding-left:30px}
+.ticks li::before{content:"";position:absolute;left:4px;top:.32em;width:9px;height:18px;background:var(--navy);transform:skewX(-22deg)}
+.fine{font-size:.9rem;color:var(--mute);margin:22px 0 0}
+
+/* realizacje - ciemna sekcja */
+.dark{background:var(--navy-d);color:#DCE5F4;position:relative}
+.dark h2,.dark h3{color:#fff}
+.dark .sec-head p{color:#B9C8E4}
+.real-top{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(32px,5vw,96px);align-items:center;margin-bottom:clamp(36px,4vw,60px)}
+.real-top h2{margin-bottom:18px}
+.real-top p{color:#B9C8E4;font-size:1.08rem;max-width:34em}
+.real-top p b{color:#fff}
+.map{position:relative;width:100%;max-width:640px;justify-self:end;aspect-ratio:612.757/577.232}
+.map svg{position:absolute;inset:0;width:100%;height:100%}
+.map path{fill:#173D78;stroke:#3B66AE;stroke-width:1.2}
+.pin{position:absolute;width:14px;height:22px;margin:-22px 0 0 -7px;background:#fff;border:0;padding:0;cursor:pointer;transform:skewX(-22deg);transition:background-color .2s,transform .2s}
+.pin:hover,.pin.on{background:#6FA0FF;transform:skewX(-22deg) scale(1.35)}
+.pin span{position:absolute;left:50%;bottom:calc(100% + 8px);transform:translateX(-50%) skewX(22deg);white-space:nowrap;background:#fff;color:var(--navy-d);font-weight:700;font-size:.85rem;padding:3px 8px;opacity:0;pointer-events:none;transition:opacity .15s}
+.pin:hover span,.pin.on span{opacity:1}
+.strip-wrap{position:relative;width:min(100vw - 2*clamp(16px,3vw,56px),1840px);margin-inline:auto}
+.strip{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 3*18px)/4);gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:4px 0 8px;cursor:grab;overscroll-behavior-x:contain}
+.strip::-webkit-scrollbar{display:none}
+.strip.drag{cursor:grabbing;scroll-snap-type:none}
+.case{scroll-snap-align:start;background:#163A72;padding:26px 26px 24px;display:flex;flex-direction:column;min-height:236px;position:relative;transition:background-color .2s;user-select:none}
+.case::before{content:"";position:absolute;left:26px;top:0;width:44px;height:5px;background:#6FA0FF;transform:skewX(-22deg)}
+.case.on{background:#1E4C93}
+.case .amt{font-size:clamp(2rem,1.4rem + 1.2vw,2.6rem);font-weight:800;color:#fff;letter-spacing:-.02em;line-height:1;margin:10px 0 12px}
+.case h3{font-size:1.06rem;color:#fff;margin-bottom:6px}
+.case p{margin:0;color:#B9C8E4;font-size:.98rem;line-height:1.45}
+.case .pl{margin-top:auto;padding-top:16px;font-size:.92rem;font-weight:600;color:#8FB2F2}
+.arrows{display:flex;gap:10px;justify-content:flex-end;margin-top:20px}
+.arr{width:54px;height:46px;border:1px solid #3B66AE;background:transparent;color:#fff;cursor:pointer;clip-path:polygon(0 0,100% 0,calc(100% - 10px) 100%,0 100%);font:700 1.2rem/1 inherit;font-family:inherit;transition:background-color .2s,opacity .2s}
+.arr:hover{background:#1E4C93}
+.arr:disabled{opacity:.3;cursor:default;background:transparent}
+.dark-edge{position:absolute;left:0;right:0;top:-1px;height:clamp(28px,3.4vw,60px);background:var(--gray);clip-path:polygon(0 0,100% 0,0 100%)}
+
+/* jak dzialamy */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(18px,2.4vw,40px);counter-reset:s}
+.step{counter-increment:s;position:relative}
+.step img{width:100%;aspect-ratio:343/150;object-fit:cover;clip-path:polygon(0 0,100% 0,calc(100% - 26px) 100%,0 100%)}
+.step-n{display:flex;align-items:center;gap:14px;margin:22px 0 12px;font-weight:800;color:var(--navy);font-size:1.05rem}
+.step-n::before{content:counter(s);display:grid;place-items:center;width:38px;height:38px;background:var(--navy);color:#fff;clip-path:polygon(9px 0,100% 0,calc(100% - 9px) 100%,0 100%)}
+.step-n::after{content:"";flex:1;height:2px;background:linear-gradient(90deg,var(--line),transparent)}
+.step p{margin:0;font-size:1.02rem}
+
+/* opinie */
+.ops{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;list-style:none;margin:0;padding:0}
+.op{background:#fff;padding:30px 28px 26px;display:flex;flex-direction:column;position:relative}
+.op::before{content:"";position:absolute;left:28px;top:0;width:44px;height:5px;background:var(--navy);transform:skewX(-22deg)}
+.op blockquote{margin:6px 0 22px;font-size:1.04rem;color:var(--ink);line-height:1.55}
+.op cite{margin-top:auto;font-style:normal;font-weight:700;color:var(--navy)}
+.op cite small{display:block;font-weight:400;color:var(--mute);font-size:.88rem}
+
+/* o nas */
+.about{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:clamp(32px,5vw,96px);align-items:start}
+.about-lead p{font-size:1.1rem}
+.feats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:34px clamp(24px,3vw,48px)}
+.feat{border-top:2px solid var(--navy);padding-top:18px}
+.feat h3{margin-bottom:8px}
+.feat p{margin:0;color:var(--mute);font-size:1rem}
+
+/* kontakt */
+.contact{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(32px,5vw,96px);align-items:start}
+.c-list{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:22px}
+.c-list small{display:block;color:var(--mute);font-size:.88rem;margin-bottom:2px}
+.c-list a,.c-list span{font-size:1.3rem;font-weight:700;color:var(--navy);text-decoration:none;overflow-wrap:anywhere}
+.mapbox{margin-top:30px;position:relative;aspect-ratio:16/9;background:var(--gray);overflow:hidden}
+.mapbox button{position:absolute;inset:0;width:100%;border:1px solid var(--line);background:#fff;cursor:pointer;font:600 1rem/1.4 inherit;font-family:inherit;color:var(--navy);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px}
+.mapbox button::before{content:"";width:16px;height:26px;background:var(--navy);transform:skewX(-22deg)}
+.mapbox iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.form{background:#fff;padding:clamp(24px,3vw,48px);display:grid;grid-template-columns:1fr 1fr;gap:16px;border-top:5px solid var(--navy)}
+.form h3{grid-column:1/-1;font-size:1.4rem;margin-bottom:4px}
+.f{display:flex;flex-direction:column;gap:6px}
+.f.full{grid-column:1/-1}
+.f label{font-size:.92rem;font-weight:600;color:var(--ink)}
+.f input,.f select,.f textarea{font:inherit;font-size:1rem;color:var(--ink);background:#F7F9FB;border:1px solid var(--line);border-radius:0;padding:13px 14px;width:100%;min-height:50px}
+.f textarea{min-height:130px;resize:vertical}
+.f input:focus,.f select:focus,.f textarea:focus{outline:2px solid var(--blue);outline-offset:0;border-color:var(--blue);background:#fff}
+.consent{grid-column:1/-1;display:flex;gap:10px;font-size:.88rem;color:var(--mute);align-items:flex-start}
+.consent input{margin-top:4px;width:18px;height:18px;flex:none;accent-color:var(--navy)}
+.form .btn{justify-self:start}
+.form-ok{grid-column:1/-1;margin:0;font-weight:600;color:var(--navy)}
+
+/* stopka */
+.ftr{background:var(--navy-d);color:#B9C8E4;padding:clamp(48px,5vw,72px) 0 28px;font-size:.96rem}
+.ftr-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:32px clamp(24px,3vw,56px)}
+.ftr .logo{color:#fff}
+.ftr .logo-svg{height:60px}
+.ftr h4{color:#fff;font-size:1rem;margin:0 0 14px}
+.ftr ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.ftr a{color:#DCE5F4;text-decoration:none}
+.ftr a:hover{color:#fff;text-decoration:underline}
+.ftr-low{margin-top:44px;padding-top:22px;border-top:1px solid #234A86;display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between;align-items:center;font-size:.88rem}
+{{BADGE_STYLE}}
+
+/* pasek na telefonie */
+.mbar{display:none}
+
+/* ---------- responsywnosc ---------- */
+@media (min-width:1700px){.strip{grid-auto-columns:calc((100% - 3*18px)/4)}}
+@media (max-width:1699px){.strip{grid-auto-columns:calc((100% - 2*18px)/3)}}
+@media (max-width:1279px){
+  .tiles{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .strip{grid-auto-columns:calc((100% - 18px)/2.3)}
+  .ops{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .ftr-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:1100px){
+  .nav{display:none}
+  .hdr-tel{margin-left:auto}
+  .burger{display:grid;place-items:center;width:48px;height:48px;border:0;background:var(--navy);cursor:pointer;clip-path:polygon(0 0,100% 0,calc(100% - 8px) 100%,0 100%)}
+  .burger span,.burger span::before,.burger span::after{display:block;width:20px;height:2px;background:#fff;position:relative;transition:transform .2s,background-color .2s}
+  .burger span::before,.burger span::after{content:"";position:absolute;left:0}
+  .burger span::before{top:-6px}.burger span::after{top:6px}
+  .menu-open .burger span{background:transparent}
+  .menu-open .burger span::before{transform:translateY(6px) rotate(45deg)}
+  .menu-open .burger span::after{transform:translateY(-6px) rotate(-45deg)}
+  .nav{position:fixed;left:0;right:0;top:var(--hdr);bottom:0;background:#fff;flex-direction:column;gap:0;padding:12px var(--pad) 32px;overflow:auto;z-index:49}
+  .menu-open .nav{display:flex}
+  .nav a{font-size:1.35rem;padding:16px 0;border-bottom:1px solid var(--line)}
+  .nav a::after{display:none}
+  .nav a.on{color:var(--navy)}
+  .about,.contact{grid-template-columns:1fr}
+  .real-top{grid-template-columns:1fr}
+  .map{justify-self:start;max-width:560px}
+  .steps{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:44px}
+  .sec-head{grid-template-columns:1fr;align-items:start}
+}
+@media (max-width:819px){
+  :root{--hdr:64px}
+  .logo-svg{height:50px}
+  .hdr .wrap{gap:12px}
+  .hdr-tel{padding-left:0;border:0}
+  .hdr-tel small{display:none}
+  .hdr-tel b{font-size:1.02rem}
+  .hero{height:auto;min-height:calc(100svh - var(--hdr));display:flex;flex-direction:column}
+  .hero picture{position:relative;inset:auto;height:auto;aspect-ratio:4/3;flex:none}
+  .hero picture img{position:absolute;object-position:50% 40%}
+  .hero-box{position:relative;width:100%;flex:1;margin-top:-44px;clip-path:polygon(0 44px,100% 0,100% 100%,0 100%);padding:70px var(--pad) 36px;display:flex;flex-direction:column;justify-content:center}
+  .hero-box h1{font-size:clamp(1.85rem,1.1rem + 3.4vw,2.4rem)}
+  .hero-box p{margin:16px 0 26px}
+  .hero-meta{margin-top:22px}
+  .hard{grid-template-columns:1fr}
+  .hard-img{min-height:0;aspect-ratio:3/2}
+  .hard-img img{clip-path:polygon(0 0,100% 0,100% calc(100% - 40px),0 100%)}
+  .hard-txt{padding:36px var(--pad) 64px;max-width:none}
+  .tiles{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .strip{grid-auto-columns:82%;gap:12px}
+  .tile-cta span{display:none}
+  .pin{width:10px;height:16px;margin:-16px 0 0 -5px}
+  .strip-wrap{width:calc(100vw - 2*var(--pad))}
+  .ops{display:grid;grid-auto-flow:column;grid-template-columns:none;grid-auto-columns:86%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin:0 calc(-1*var(--pad));padding:0 var(--pad);scroll-padding-inline:var(--pad);gap:12px}
+  .ops::-webkit-scrollbar{display:none}
+  .op{scroll-snap-align:start}
+  .feats{grid-template-columns:1fr;gap:26px}
+  .form{grid-template-columns:1fr;padding:24px 20px}
+  .ftr-grid{grid-template-columns:1fr 1fr;gap:28px 20px}
+  .ftr-grid > div:first-child{grid-column:1/-1}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:40;transform:translateY(110%);transition:transform .25s;box-shadow:0 -6px 20px rgba(15,44,92,.15)}
+  .mbar.show{transform:none}
+  .mbar a{display:flex;align-items:center;justify-content:center;min-height:56px;font-weight:700;text-decoration:none;font-size:1.02rem}
+  .mbar a:first-child{background:#fff;color:var(--navy)}
+  .mbar a:last-child{background:var(--navy);color:#fff}
+  body{padding-bottom:0}
+  .ftr{padding-bottom:84px}
+}
+@media (max-width:560px){
+  .steps{grid-template-columns:1fr;row-gap:36px}
+  .wrap{width:calc(100vw - 2*var(--pad))}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header class="hdr" id="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Analitycy Kredytowi - strona główna">{{LOGO}}</a>
+    <nav class="nav" id="nav" aria-label="Menu główne">
+      <a href="#oferta">Oferta</a>
+      <a href="#realizacje">Realizacje</a>
+      <a href="#jak">Jak działamy</a>
+      <a href="#opinie">Opinie</a>
+      <a href="#o-nas">O nas</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <a class="hdr-tel" href="tel:+48665419413"><small>Infolinia</small><b>665 419 413</b></a>
+    <button class="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav"><span></span></button>
+  </div>
+</header>
+
+<main>
+<section class="hero" aria-label="Analitycy Kredytowi">
+  <picture>
+    <source media="(max-width: 819px)" type="image/webp" srcset="img/hero-m-480.webp 480w, img/hero-m-760.webp 760w, img/hero-m-1000.webp 1000w" sizes="100vw">
+    <img src="img/hero-1600.webp" srcset="img/hero-1024.webp 1024w, img/hero-1600.webp 1600w, img/hero-1920.webp 1920w" sizes="100vw" width="1920" height="885" alt="Analiza dokumentów finansowych z kalkulatorem i wykresami" fetchpriority="high">
+  </picture>
+  <div class="hero-box" id="heroBox">
+    <h1>Pośrednictwo kredytowe dla firm i osób prywatnych<span>Twoje finansowanie bez barier</span></h1>
+    <p>Kredyty, pożyczki, leasing i faktoring z banków i spoza nich. Zajmujemy się także sytuacjami, w których tradycyjna bankowość często odmawia.</p>
+    <a class="btn btn-white" href="#kontakt">Opisz swoją sytuację <span class="ar" aria-hidden="true"></span></a>
+    <div class="hero-meta"><span>Działamy w całej Polsce</span><a href="mailto:kontakt@analitycy-kredytowi.pl">kontakt@analitycy-kredytowi.pl</a></div>
+  </div>
+</section>
+
+<section class="sec" id="oferta">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Usługi finansowe dla Ciebie i Twojej firmy</h2>
+      <p>Dobieramy finansowanie do sytuacji klienta: od kredytu gotówkowego po leasing zwrotny linii produkcyjnej. Wybierz usługę, a w formularzu od razu zaznaczymy, czego dotyczy zapytanie.</p>
+    </div>
+    <ul class="tiles">
+      <li class="tile"><a href="#kontakt" data-u="Kredyty firmowe"><img src="img/t-firmowe-320.webp" width="320" height="320" loading="lazy" alt="Podpisanie umowy kredytu firmowego"><span class="lab">Kredyty firmowe</span></a></li>
+      <li class="tile"><a href="#kontakt" data-u="Faktoring i faktoring zakupowy"><img src="img/t-faktoring-320.webp" width="320" height="320" loading="lazy" alt="Rozliczenie faktur na kalkulatorze"><span class="lab">Faktoring i faktoring zakupowy</span></a></li>
+      <li class="tile"><a href="#kontakt" data-u="Leasing zwrotny nieruchomości"><img src="img/t-leasingzw-320.webp" width="320" height="320" loading="lazy" alt="Podpisanie umowy leasingu zwrotnego"><span class="lab">Leasing zwrotny nieruchomości</span></a></li>
+      <li class="tile"><a href="#kontakt" data-u="Leasing bez BIK"><img src="img/t-leasingbik-320.webp" width="320" height="320" loading="lazy" alt="Doradca przy ciągniku rolniczym"><span class="lab">Leasing bez BIK</span></a></li>
+      <li class="tile"><a href="#kontakt" data-u="Pożyczki Agro"><img src="img/t-agro-320.webp" srcset="img/t-agro-320.webp 320w, img/t-agro-560.webp 560w" sizes="(max-width:819px) 46vw, (max-width:1279px) 23vw, 15vw" width="320" height="320" loading="lazy" alt="Pole uprawne gospodarstwa rolnego"><span class="lab">Pożyczka Agro</span></a></li>
+      <li class="tile"><a href="#kontakt" data-u="Odkupimy nieopłaconą fakturę"><img src="img/t-faktura-320.webp" width="320" height="320" loading="lazy" alt="Zestawienie faktur z długopisem"><span class="lab">Odkupimy nieopłaconą fakturę</span></a></li>
+      <li class="tile"><a href="#kontakt" data-u="Kredyty hipoteczne"><img src="img/t-hipoteczne-320.webp" srcset="img/t-hipoteczne-320.webp 320w, img/t-hipoteczne-560.webp 560w" sizes="(max-width:819px) 46vw, (max-width:1279px) 23vw, 15vw" width="320" height="320" loading="lazy" alt="Rodzina przed własnym domem"><span class="lab">Kredyty hipoteczne</span></a></li>
+      <li class="tile"><a href="#kontakt" data-u="Pożyczki hipoteczne"><img src="img/t-pozhip-320.webp" width="320" height="320" loading="lazy" alt="Klucz do domu i banknoty"><span class="lab">Pożyczki hipoteczne</span></a></li>
+      <li class="tile"><a href="#kontakt" data-u="Kredyty gotówkowe"><img src="img/t-gotowkowe-320.webp" width="320" height="320" loading="lazy" alt="Banknoty w dłoni"><span class="lab">Kredyty gotówkowe</span></a></li>
+      <li class="tile"><a href="#kontakt" data-u="Pożyczka pozabankowa"><img src="img/t-pozabankowa-320.webp" srcset="img/t-pozabankowa-320.webp 320w, img/t-pozabankowa-560.webp 560w" sizes="(max-width:819px) 46vw, (max-width:1279px) 23vw, 15vw" width="320" height="320" loading="lazy" alt="Model domu na banknotach"><span class="lab">Pożyczka pozabankowa</span></a></li>
+      <li class="tile"><a href="#kontakt" data-u="Oddłużanie z chwilówek"><img src="img/t-chwilowki-320.webp" srcset="img/t-chwilowki-320.webp 320w, img/t-chwilowki-560.webp 560w" sizes="(max-width:819px) 46vw, (max-width:1279px) 23vw, 15vw" width="320" height="320" loading="lazy" alt="Kobieta przelicza domowy budżet"><span class="lab">Oddłużanie z chwilówek</span></a></li>
+      <li class="tile tile-cta"><a href="#kontakt" data-u=""><b>Nie wiesz, które finansowanie pasuje?</b><span>Zostaw kontakt - oddzwonimy i przedstawimy konkretną propozycję.</span><i>Zapytaj <span class="ar" aria-hidden="true" style="display:inline-block;width:18px;height:2px;background:#fff;transform:skewX(-22deg)"></span></i></a></li>
+    </ul>
+    <p class="src-note"><b>Źródła finansowania:</b> banki, banki komercyjne, fundusze inwestycyjne i inwestorzy prywatni.</p>
+  </div>
+</section>
+
+<section class="hard" aria-labelledby="h-hard">
+  <div class="hard-img"><img src="img/band-1400.webp" srcset="img/band-800.webp 800w, img/band-1400.webp 1400w" sizes="(max-width:819px) 100vw, 50vw" width="1400" height="933" loading="lazy" alt="Analiza domowych finansów przy biurku"></div>
+  <div class="hard-txt">
+    <h2 id="h-hard">Pomoc w trudnych sytuacjach</h2>
+    <p class="q">Masz zaległości, negatywny BIK lub problemy z uzyskaniem kredytu w banku?</p>
+    <p>Zajmujemy się niestandardowymi przypadkami, w których tradycyjna bankowość często odmawia. Szukamy rozwiązań alternatywnych i do każdego klienta podchodzimy indywidualnie: od analizy zdolności po negocjacje warunków.</p>
+    <ul class="ticks">
+      <li>Oferty dopasowane indywidualnie - bankowe i pozabankowe</li>
+      <li>Finansowanie także w skomplikowanych przypadkach</li>
+      <li>Wszystkie informacje przetwarzamy z zachowaniem pełnej poufności</li>
+    </ul>
+    <p class="fine">Decyzję o przyznaniu finansowania i jego warunkach podejmuje bank lub instytucja finansująca po ocenie wniosku.</p>
+  </div>
+</section>
+
+<section class="sec dark" id="realizacje">
+  <div class="dark-edge" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="real-top">
+      <div>
+        <h2>Zrealizowane finansowania w całej Polsce</h2>
+        <p>Pomogliśmy już ponad 3000 klientom uzyskać kredyty, pożyczki i leasingi. Łącznie to <b>235 mln zł</b> finansowania i <b>923</b> zamknięte transakcje. Kilka przykładów - kliknij punkt na mapie albo przewiń karty.</p>
+      </div>
+      <div class="map" id="map">
+        <svg viewBox="0 0 612.757 577.232" aria-hidden="true" focusable="false">{{POLAND}}</svg>
+      </div>
+    </div>
+  </div>
+  <div class="strip-wrap">
+    <div class="strip" id="strip" tabindex="0" aria-label="Przykłady zrealizowanych finansowań"></div>
+    <div class="arrows"><button class="arr" id="prev" type="button" aria-label="Poprzednie">&#8592;</button><button class="arr" id="next" type="button" aria-label="Następne">&#8594;</button></div>
+  </div>
+</section>
+
+<section class="sec" id="jak">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Jak działamy</h2>
+      <p>Każde finansowanie zaczynamy od rozmowy i analizy dokumentów. Wniosek składamy dopiero wtedy, gdy wiadomo, które rozwiązanie ma sens w Twojej sytuacji.</p>
+    </div>
+    <ol class="steps">
+      <li class="step"><img src="img/step-1.webp" width="343" height="132" loading="lazy" alt="Rozmowa z doradcą"><div class="step-n">Rozmowa</div><p>Szczegółowa rozmowa, podczas której pytamy o potrzeby klienta.</p></li>
+      <li class="step"><img src="img/step-2.webp" width="343" height="132" loading="lazy" alt="Analiza dokumentów"><div class="step-n">Analiza dokumentów</div><p>Analizujemy dokumenty finansowe - każdy klient ma inne potrzeby.</p></li>
+      <li class="step"><img src="img/step-3.webp" width="343" height="132" loading="lazy" alt="Omówienie propozycji"><div class="step-n">Propozycja</div><p>Przedstawiamy najkorzystniejsze możliwe rozwiązania, dopasowane do branży i inwestycji, którą klient chce zrealizować.</p></li>
+      <li class="step"><img src="img/step-4.webp" width="343" height="132" loading="lazy" alt="Wypełniony wniosek"><div class="step-n">Wniosek</div><p>Uzupełniamy wnioski o finansowanie.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec gray" id="opinie">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Co mówią nasi klienci</h2>
+      <p>Opinie firm i klientów indywidualnych, którym pomogliśmy uzyskać finansowanie.</p>
+    </div>
+    <ul class="ops">
+      <li class="op"><blockquote>Polecamy, refinansowali nam zobowiązanie z oprocentowania 10,99% na 5,06% kredyt inwestycyjny. Proces jasny i szybki.</blockquote><cite>Elżbieta Telfaz<small>Klient</small></cite></li>
+      <li class="op"><blockquote>Pomogli uwolnić środki w leasingu zwrotnym na 14,5 mln pod maszyny rolnicze. Polecam!</blockquote><cite>Agromar sp. z o.o.<small>Klient</small></cite></li>
+      <li class="op"><blockquote>Bardzo szybki kontakt i rzetelna, konkretna obsługa. Pani Wiktoria wyjaśniła mi dokładnie cały proces, a po wysłanych dokumentach znalazła odpowiednie rozwiązanie dla mojej firmy.</blockquote><cite>Trans-Jan<small>Klient</small></cite></li>
+      <li class="op"><blockquote>Rozwiązanie finansowe, które dla mnie znaleźli, pozwoliło mi zapłacić VAT w US. Zabezpieczenie na nieruchomości w formie limitu faktoringowego, bez sprawdzania baz.</blockquote><cite>Notica Investment Sp. z o.o.<small>Klient</small></cite></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec" id="o-nas">
+  <div class="wrap about">
+    <div class="about-lead">
+      <h2>Ogólnopolskie pośrednictwo finansowe</h2>
+      <p style="margin-top:22px">Jesteśmy ogólnopolską firmą specjalizującą się w pozyskiwaniu finansowania bankowego i pozabankowego. Naszą misją jest szybkie i skuteczne dopasowanie oferty do potrzeb każdego klienta - także w trudnych sytuacjach kredytowych.</p>
+      <p>Współpracujemy z bankami, funduszami inwestycyjnymi i inwestorami prywatnymi, dzięki czemu klient nie musi sam porównywać dziesiątek ofert.</p>
+    </div>
+    <div class="feats">
+      <div class="feat"><h3>Szerokie portfolio</h3><p>Kredyty, pożyczki i leasingi z sektora bankowego i pozabankowego, dobierane do konkretnej sytuacji finansowej.</p></div>
+      <div class="feat"><h3>Indywidualne podejście</h3><p>Znajomość rynku pozwala szybko zamienić potrzeby klienta w konkretne rozwiązanie.</p></div>
+      <div class="feat"><h3>Wsparcie w trudnych sytuacjach</h3><p>Obsługujemy klientów z niestandardowymi potrzebami i trudną historią kredytową - od analizy zdolności po negocjacje.</p></div>
+      <div class="feat"><h3>Bezpieczeństwo i poufność</h3><p>Wszystkie informacje przetwarzamy poufnie. Współpracujemy z renomowanymi instytucjami finansowymi i firmami pożyczkowymi.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec gray" id="kontakt">
+  <div class="wrap contact">
+    <div>
+      <h2>Skontaktuj się z nami</h2>
+      <p style="margin-top:20px;font-size:1.1rem">Chcesz dowiedzieć się, jakie finansowanie będzie najlepsze w Twojej sytuacji? Zostaw kontakt - oddzwonimy i przedstawimy konkretną propozycję.</p>
+      <ul class="c-list">
+        <li><small>Infolinia</small><a href="tel:+48665419413">665 419 413</a></li>
+        <li><small>E-mail</small><a href="mailto:kontakt@analitycy-kredytowi.pl">kontakt@analitycy-kredytowi.pl</a></li>
+        <li><small>Siedziba</small><span>ul. Jagiełły 2/5, 82-400 Sztum</span></li>
+      </ul>
+      <div class="mapbox" id="mapbox"><button type="button" id="mapBtn">Pokaż siedzibę na Mapach Google</button></div>
+    </div>
+    <form class="form" id="form" novalidate>
+      <h3>Zapytanie o finansowanie</h3>
+      <div class="f"><label for="f-n">Imię i nazwisko</label><input id="f-n" name="n" autocomplete="name"></div>
+      <div class="f"><label for="f-nip">NIP (dla firm)</label><input id="f-nip" name="nip" inputmode="numeric"></div>
+      <div class="f"><label for="f-t">Telefon</label><input id="f-t" name="t" type="tel" autocomplete="tel"></div>
+      <div class="f"><label for="f-e">E-mail</label><input id="f-e" name="e" type="email" autocomplete="email"></div>
+      <div class="f full"><label for="f-u">Usługa</label>
+        <select id="f-u" name="u">
+          <option value="">Wybierz interesującą Cię usługę</option>
+          <option>Kredyty firmowe</option><option>Faktoring i faktoring zakupowy</option><option>Leasing zwrotny nieruchomości</option><option>Leasing bez BIK</option><option>Pożyczki Agro</option><option>Odkupimy nieopłaconą fakturę</option><option>Kredyty hipoteczne</option><option>Pożyczki hipoteczne</option><option>Kredyty gotówkowe</option><option>Pożyczka pozabankowa</option><option>Oddłużanie z chwilówek</option>
+        </select></div>
+      <div class="f full"><label for="f-m">Wiadomość</label><textarea id="f-m" name="m" placeholder="Np. kwota, cel finansowania, czy były odmowy w bankach"></textarea></div>
+      <label class="consent"><input type="checkbox" name="zg">Wyrażam zgodę na kontakt w sprawie zapytania. Administratorem danych jest właściciel serwisu - szczegóły w polityce prywatności.</label>
+      <button class="btn btn-navy" type="submit">Wyślij zapytanie <span class="ar" aria-hidden="true"></span></button>
+      <p class="form-ok" id="formOk" hidden>Dziękujemy. W podglądzie formularz nie wysyła wiadomości - zacznie działać na docelowej stronie.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-grid">
+      <div>
+        <a class="logo" href="#top" aria-label="Analitycy Kredytowi">{{LOGO}}</a>
+        <p style="margin:18px 0 0;max-width:30em">Ogólnopolska firma specjalizująca się w pozyskiwaniu finansowania bankowego i pozabankowego dla firm i klientów indywidualnych.</p>
+      </div>
+      <div>
+        <h4>Dla firm</h4>
+        <ul><li><a href="#oferta">Kredyty firmowe</a></li><li><a href="#oferta">Faktoring</a></li><li><a href="#oferta">Leasing zwrotny</a></li><li><a href="#oferta">Leasing bez BIK</a></li><li><a href="#oferta">Pożyczka Agro</a></li></ul>
+      </div>
+      <div>
+        <h4>Dla klientów indywidualnych</h4>
+        <ul><li><a href="#oferta">Kredyty hipoteczne</a></li><li><a href="#oferta">Pożyczki hipoteczne</a></li><li><a href="#oferta">Kredyty gotówkowe</a></li><li><a href="#oferta">Oddłużanie z chwilówek</a></li></ul>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul><li><a href="tel:+48665419413">665 419 413</a></li><li><a href="mailto:kontakt@analitycy-kredytowi.pl">kontakt@analitycy-kredytowi.pl</a></li><li>ul. Jagiełły 2/5<br>82-400 Sztum</li></ul>
+      </div>
+    </div>
+    <div class="ftr-low">
+      <span>© <span id="yr">2026</span> Analitycy Kredytowi · <a href="#top">Polityka prywatności</a> · <a href="#top">Regulamin</a></span>
+      {{BADGE_LINK}}
+    </div>
+  </div>
+</footer>
+
+<div class="mbar" id="mbar"><a href="tel:+48665419413">Zadzwoń</a><a href="#kontakt">Zapytaj o finansowanie</a></div>
+
+<script>
+(function(){
+var d=document,$=function(s){return d.querySelector(s)};
+d.getElementById('yr').textContent=new Date().getFullYear();
+/* wysokosc panelu hero do skosu */
+var hb=$('#heroBox');function bh(){hb.style.setProperty('--bh',hb.offsetHeight+'px')}bh();addEventListener('resize',bh);
+/* naglowek, menu */
+var hdr=$('.hdr'),bur=$('.burger'),mbar=$('#mbar'),hero=$('.hero');
+function sc(){var y=scrollY;hdr.classList.toggle('sc',y>8);mbar.classList.toggle('show',y>hero.offsetHeight*.7)}
+addEventListener('scroll',sc,{passive:true});sc();
+bur.addEventListener('click',function(){var o=d.body.classList.toggle('menu-open');bur.setAttribute('aria-expanded',o)});
+d.querySelectorAll('.nav a').forEach(function(a){a.addEventListener('click',function(){d.body.classList.remove('menu-open');bur.setAttribute('aria-expanded','false')})});
+var secs=['oferta','realizacje','jak','opinie','o-nas','kontakt'].map(function(i){return d.getElementById(i)});
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){d.querySelectorAll('.nav a').forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-45% 0px -50% 0px'});secs.forEach(function(s){io.observe(s)})}
+/* kafle oferty -> formularz */
+d.querySelectorAll('[data-u]').forEach(function(a){a.addEventListener('click',function(){var v=a.getAttribute('data-u');if(v)$('#f-u').value=v})});
+/* realizacje */
+var C=[
+["120 mln zł","Finansowanie deweloperskie","Realizacja deweloperska.","Warszawa",71,42],
+["43 mln zł","Nieruchomość komercyjna","Sfinansowanie nieruchomości komercyjnej.","Warszawa",65,43],
+["42 mln zł","Kredyt inwestycyjny","Zakup nieruchomości pod wynajem.","Toruń",42,30],
+["36 mln zł","Finansowanie deweloperskie","Realizacja deweloperska.","Poznań",25,40],
+["17,5 mln zł","Kredyt korporacyjny","Zakup biurowca.","Elbląg",56,14],
+["15,5 mln zł","Limit kredytowy","Limit dla spółki handlującej węglem.","Szczecin",8,25],
+["11 mln zł","Pożyczka hipoteczna","Zakup hotelu, oprocentowanie 5,1%.","Władysławowo",38,5],
+["11 mln zł","Refinansowanie","Limit w koncie: z oprocentowania 7,1% na 5,2%.","Pruszków",64,49],
+["10 mln zł","Refinansowanie","Kredyt z oprocentowaniem 10,9% zamieniony na kredyt 5,09%.","Tomaszów Mazowiecki",55,58],
+["11 mln zł","Leasing zwrotny","Leasing zwrotny dla firmy produkcyjnej.","Kargowa, woj. lubuskie",11,49],
+["8,9 mln zł","Leasing zwrotny","Leasing zwrotny linii produkcyjnej.","Kargowa, woj. lubuskie",14,44],
+["7,8 mln zł","Leasing operacyjny","Dla przedsiębiorstwa rolnego.","Klępsk, woj. lubuskie",17,46],
+["5,3 mln zł","Finansowanie zakupu","Zakup centrum medycznego, oprocentowanie 5,6%.","Żukowo, woj. pomorskie",36,14],
+["3,2 mln zł","Leasing operacyjny","Kombajn ziemniaczany.","Klępsk, woj. lubuskie",16,39],
+["2,5 mln zł","Pożyczka hipoteczna","Rozwój firmy - sklep internetowy.","Rzeszów",75,80],
+["2,4 mln zł","Leasing zwrotny","Maszyna budowlana, klient ze złą historią kredytową.","Wrocław",23,65],
+["2 mln zł","Faktoring i pożyczka","Faktoring zakupowy 500 tys. zł i pożyczka 1,5 mln zł na płatności VAT.","Warszawa",68,40],
+["2 mln zł","Kredyt inwestycyjny","Produkcja pierogów.","Głogów",20,55],
+["2 mln zł","Faktoring zakupowy","Zabezpieczony hipoteką, branża meblarska.","Białystok",85,32],
+["1,5 mln zł","Faktoring zakupowy","Spłata zaległości VAT dewelopera.","Warszawa",68,46],
+["1,4 mln zł","Pożyczka pod nieruchomość","Dla klienta z wpisami w BIK i KRD.","Konstancin-Jeziorna",72,49],
+["1,3 mln zł","Leasing","Wyposażenie sali zabaw.","Kórnik",32,47],
+["1 mln euro","Kredyt obrotowy","Dla firmy transportowej.","Sochaczew",60,44]];
+var strip=$('#strip'),map=$('#map'),pins=[],cards=[];
+C.forEach(function(c,i){
+  var el=d.createElement('article');el.className='case';el.innerHTML='<div class="amt">'+c[0]+'</div><h3>'+c[1]+'</h3><p>'+c[2]+'</p><div class="pl">'+c[3]+'</div>';strip.appendChild(el);cards.push(el);
+  var p=d.createElement('button');p.type='button';p.className='pin';p.style.left=c[4]+'%';p.style.top=c[5]+'%';p.setAttribute('aria-label',c[0]+', '+c[1]+', '+c[3]);p.innerHTML='<span>'+c[0]+'</span>';map.appendChild(p);pins.push(p);
+  function on(v){el.classList.toggle('on',v);p.classList.toggle('on',v)}
+  el.addEventListener('mouseenter',function(){on(true)});el.addEventListener('mouseleave',function(){on(false)});
+  p.addEventListener('mouseenter',function(){on(true)});p.addEventListener('mouseleave',function(){on(false)});
+  p.addEventListener('click',function(){cards.forEach(function(x,j){x.classList.toggle('on',j===i)});pins.forEach(function(x,j){x.classList.toggle('on',j===i)});strip.scrollTo({left:el.offsetLeft-strip.offsetLeft,behavior:'smooth'})});
+});
+var prev=$('#prev'),next=$('#next');
+function step(){var c=cards[0];return c.offsetWidth+parseFloat(getComputedStyle(strip).columnGap||18)}
+function upd(){prev.disabled=strip.scrollLeft<4;next.disabled=strip.scrollLeft+strip.clientWidth>=strip.scrollWidth-4}
+prev.addEventListener('click',function(){strip.scrollBy({left:-step(),behavior:'smooth'})});
+next.addEventListener('click',function(){strip.scrollBy({left:step(),behavior:'smooth'})});
+strip.addEventListener('scroll',upd,{passive:true});addEventListener('resize',upd);upd();
+/* przeciaganie mysza */
+var dn=false,sx=0,sl=0,mv=0;
+strip.addEventListener('pointerdown',function(e){if(e.pointerType!=='mouse')return;dn=true;mv=0;sx=e.clientX;sl=strip.scrollLeft;strip.classList.add('drag')});
+addEventListener('pointermove',function(e){if(!dn)return;mv=Math.abs(e.clientX-sx);strip.scrollLeft=sl-(e.clientX-sx)});
+addEventListener('pointerup',function(){if(!dn)return;dn=false;strip.classList.remove('drag');var w=step(),t=Math.round(strip.scrollLeft/w)*w;strip.scrollTo({left:t,behavior:'smooth'})});
+strip.addEventListener('keydown',function(e){if(e.key==='ArrowRight'){next.click();e.preventDefault()}if(e.key==='ArrowLeft'){prev.click();e.preventDefault()}});
+/* mapa Google po kliknieciu */
+$('#mapBtn').addEventListener('click',function(){var f=d.createElement('iframe');f.src='https://www.google.com/maps?q='+encodeURIComponent('Jagiełły 2, 82-400 Sztum')+'&output=embed';f.title='Siedziba na mapie';f.loading='lazy';f.referrerPolicy='no-referrer-when-downgrade';$('#mapbox').innerHTML='';$('#mapbox').appendChild(f)});
+/* formularz pokazowy */
+$('#form').addEventListener('submit',function(e){e.preventDefault();$('#formOk').hidden=false});
+})();
+</script>
+</body>
+</html>
